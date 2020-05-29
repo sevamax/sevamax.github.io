@@ -1,5 +1,3 @@
-
-
 # Sivachenko Max
 My homeworks!
 
