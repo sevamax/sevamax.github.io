@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap');
+
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium'), local('Lato-Medium'), url('../fonts/latomedium.woff2') format('woff2'), url('../fonts/latomedium.woff') format('woff'), url('../fonts/latomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueCyrillic';
+    src: url('../fonts/BebasNeueCyrillic.eot');
+    src: url('../fonts/BebasNeueCyrillic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueCyrillic.woff2') format('woff2'),
+        url('../fonts/BebasNeueCyrillic.woff') format('woff'),
+        url('../fonts/BebasNeueCyrillic.ttf') format('truetype'),
+        url('../fonts/BebasNeueCyrillic.svg#BebasNeueCyrillic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
