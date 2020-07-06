@@ -32,7 +32,7 @@ section {
   padding: 100px 0 ;
 }
 .main {
-  background: #ffffff url(/img/main-layer.jpg) center center no-repeat;
+  background: #ffffff url(../img/main-layer.jpg) center center no-repeat;
   background-size: cover;
   padding: 30px 0;
 }
