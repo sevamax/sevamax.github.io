@@ -89,8 +89,12 @@ section {
   margin-bottom: 20px;
 }
 .main-form-btn {
+  font-family: 'ProximaNova_bold', sans-serif;
   display: block;
   width: 100%;
+  font-size: 16px;
+  
+  text-transform: uppercase;
 }
 .main-form label {
   position: absolute;
