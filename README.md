@@ -8,3 +8,6 @@ My homeworks!
 [practise](https://sevamax.github.io/header/ "Homework") -- First part of practise
 
 [Lesson 14](https://sevamax.github.io/fonts(%D0%94%D0%97)/ "Homework") -- fonts
+
+
+[practise(2)](https://sevamax.github.io/practice(2)/ "Homework") -- Second part of practise
