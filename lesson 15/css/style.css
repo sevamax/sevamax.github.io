@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-weight: 100;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 15px;
+}
+.image {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+}
+.image-one {
+    position: relative;
+	background: url(../img/1.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-one::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.image-one:hover::before {
+    opacity: 1;
+}
+
+
+.image-two {
+    position: relative;
+	background: url(../img/2.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-two::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.image-two:hover::before {
+    opacity: 1;
+}
+
+.image-three {
+    position: relative;
+	background: url(../img/3.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.image-three::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.image-three:hover::before {
+    opacity: 1;
+}
+
+.image-four {
+    position: relative;
+	background: url(../img/4.jpg) center no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.image-four::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+.image-four:hover::before {
+    opacity: 1;
+}
+
+
+.button-one {
+	border: none;
+	font-weight: 700;
+	font-size: 14px;
+    color: white;
+    padding: .8em 1em calc(.8em + 3px);
+     border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transform: rotate(15deg) scale(1.1, 1.1) translate(-20%, 30px);
+    transition: all 0.2s;
+
+}
+
+.button-one:hover {
+    margin-right:20px;
+    background: #234f11;
+    color: #f00;
+    box-shadow: 0 -3px #234f11 inset;
+    opacity: 1;
+    transform: scaleX(1);
+}
+.button-two {
+	display: inline-block;
+ color: white;
+ padding: .5em 2em;
+ border: none;
+ border-width: 2px 0;
+ border-style: solid none;
+ border-color: #FDBE33 #000 #D77206;
+ border-radius: 6px;
+ background: linear-gradient(#F3AE0F, #E38916) #E38916;
+ transition: all 0.2s ;
+}
+.button-two:hover {
+    transform: rotate(-15deg) scale(1.1, 1.1) translate(20%, -30px);
+}
