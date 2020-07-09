@@ -5,11 +5,29 @@ Another projects
 
 [Accordeon](https://sevamax.github.io/accordeon/) - accordeon example
 
-[Tabs](https://sevamax.github.io/tab/) - tabs example
+[Forms-group](https://sevamax.github.io/forms-group/) - some sort of stylish form items
+
+[Fullpage](https://sevamax.github.io/Fullpage/) - fullpage page without adaptive
 
 [Modal](https://sevamax.github.io/modal/) - modal window example
 
-[Fullpage](https://sevamax.github.io/Fullpage/) - fullpage page without adaptive
+[Progress](https://sevamax.github.io/progress/) - progress bar
+
+[Slider](https://sevamax.github.io/slider/) - native slider
+
+[CSS3D](https://sevamax.github.io/ccs3d/) - 3D cube
+
+[Spinners](https://sevamax.github.io/slider/) - groupe of spinners
+
+[Tabs](https://sevamax.github.io/tab/) - tabs example
+
+
+
+
+
+
+
+
 
 
 
