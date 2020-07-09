@@ -15,9 +15,9 @@ Another projects
 
 [Slider](https://sevamax.github.io/slider/) - native slider
 
-[CSS3D](https://sevamax.github.io/ccs3d/) - 3D cube
+[CSS3D](https://sevamax.github.io/css3d/) - 3D cube
 
-[Spinners](https://sevamax.github.io/slider/) - groupe of spinners
+[Spinners](https://sevamax.github.io/spinners/) - groupe of spinners
 
 [Tabs](https://sevamax.github.io/tab/) - tabs example
 
