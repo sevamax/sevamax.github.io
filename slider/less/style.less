@@ -1,0 +1,95 @@
+// out: ../css/style.css
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, ul, li, span, div, a, p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-family: "Tahoma";
+    font-weight: normal;
+}
+
+.overflow() {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.slider-container {
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+
+    .slider-row {
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        .overflow();
+
+        .slide {
+            height: 100%;
+            width: 100vw;
+            float: left;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        background-color: #000;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position: center;
+        cursor: pointer;
+
+        &.prev {
+            background-image: url(../img/icons/slide-left.svg);
+            left: 0;
+        }
+        &.next {
+            background-image: url(../img/icons/slide-right.svg);
+            right: 0;
+        }
+    }
+    .dots {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        z-index: 10;
+        text-align: center;
+        
+        .dot {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #fff;
+            border-radius: 100%;
+            cursor: pointer;
+
+            &.active {
+                background-color: green;
+            }
+        }
+    }
+}
