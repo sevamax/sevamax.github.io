@@ -1,0 +1,148 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+div,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  font-family: "Tahoma";
+  font-weight: normal;
+}
+body {
+  padding: 60px;
+  box-sizing: border-box;
+}
+.spinner {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #ddd;
+  margin-right: 20px;
+  position: relative;
+}
+.spinner:before,
+.spinner:after {
+  content: "";
+  position: absolute;
+}
+@keyframes pulse-rotate {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    transform: scale(1.2) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+.spinner.v1:before {
+  border-radius: 100%;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background-color: transparent;
+  border: 2px solid #2980b9;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  box-sizing: border-box;
+  animation: pulse-rotate 1s linear infinite;
+}
+.spinner.v3 {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner.v3:after {
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+  width: 30px;
+  background-color: #2980b9;
+  transform-origin: 0 50%;
+  animation: rotate 2s linear infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+.spinner.v4:before,
+.spinner.v4:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2980b9;
+  border-radius: 100%;
+  opacity: 0;
+  animation: pulse 1.3s linear infinite;
+}
+.spinner.v4:after {
+  animation-delay: 0.3s;
+  animation-duration: 1.8s;
+}
+.spinner.v5 {
+  background-color: transparent;
+}
+@keyframes up {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+    background-color: #2980b9;
+  }
+}
+.spinner.v5 > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: #ddd;
+  border-radius: 100%;
+  animation: up 1s ease-in-out infinite;
+}
+.spinner.v5 > span:nth-child(2) {
+  left: 17px;
+  animation-delay: 0.33s;
+}
+.spinner.v5 > span:nth-child(3) {
+  left: 34px;
+  animation-delay: 0.66s;
+}
