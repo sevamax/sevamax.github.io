@@ -3,7 +3,10 @@
 
 Another projects 
 
+
 [Tabs](https://sevamax.github.io/tab/) - tabs example
+
+[Modal](https://sevamax.github.io/modal/) - modal window example
 
 [Fullpage](https://sevamax.github.io/Fullpage/) - fullpage page without adaptive
 
