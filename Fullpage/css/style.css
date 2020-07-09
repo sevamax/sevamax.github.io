@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+  position: relative;
+}
+.menuLeft {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  display: none;
+  z-index: 5;
+  position: absolute;
+  opacity: 0.8;
+}
+.menuLeft ul {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.menuLeft ul li {
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+  list-style: none;
+}
+.menuLeft ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+.menuLeft img {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  opacity: 1;
+  user-select: none;
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #000;
+  background-color: blueviolet;
+  border-radius: 2px;
+}
+.btnprev {
+  position: absolute;
+  left: 15px;
+  bottom: 5px;
+}
+.btnnext {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+}
+.site-nav {
+  padding: 0 25px;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ccc;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+.site-nav.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.site-nav .logo {
+  color: #666;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.site-nav .logo img {
+  height: 30px;
+  width: 35px;
+  margin-top: 0;
+}
+.site-nav .menu {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.site-nav .menu li {
+  display: inline-block;
+  list-style: none;
+}
+.site-nav .menu li.mobile {
+  display: none;
+}
+.site-nav .menu li a {
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+}
+#fp-nav ul li a span {
+  background-color: #fff;
+}
+#fullpage .section {
+  background-color: #000;
+}
+#fullpage .section .bg {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+#fullpage .section .content {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s ease;
+  transform: translateY(-100px);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 170%;
+  text-align: center;
+}
+#fullpage .section .content.active {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+}
+#fullpage .section .content .section-title {
+  color: #eee;
+}
+#fullpage .section .content p {
+  color: #ccc;
+}
+#fullpage .section .content .btn-container {
+  margin-top: 40px;
+  color: #000;
+}
+#fullpage :nth-child(5) {
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .site-nav .menu li.dekstop {
+    display: none;
+  }
+  .site-nav .menu li.mobile {
+    display: inline-block;
+  }
+}
