@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+}
+body {
+  perspective: 3500px;
+  perspective-origin: -500px -1000px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+span,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+.btn-panel {
+  margin: 100px auto;
+  text-align: center;
+}
+.btn-panel .btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.box {
+  cursor: pointer;
+  transform-style: preserve-3d;
+  height: 250px;
+  width: 250px;
+  margin: 100px auto;
+  position: relative;
+}
+.box .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img//texture.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.box .side.front {
+  transform: translateZ(125px);
+}
+.box .side.back {
+  transform: translateZ(-125px);
+}
+.box .side.up {
+  transform: translateY(-125px) rotateX(90deg);
+}
+.box .side.down {
+  transform: translateY(125px) rotateX(90deg);
+}
+.box .side.left {
+  transform: translateX(-125px) rotateY(-90deg);
+}
+.box .side.right {
+  transform: translateX(125px) rotateY(90deg);
+}
