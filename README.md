@@ -3,7 +3,7 @@
 
 Another projects 
 
-[Accordeon](https://sevamax.github.io/accordeon/) accordeon example
+[Accordeon](https://sevamax.github.io/accordeon/) - accordeon example
 
 [Tabs](https://sevamax.github.io/tab/) - tabs example
 
