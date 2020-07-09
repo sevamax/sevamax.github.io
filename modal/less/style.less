@@ -1,0 +1,102 @@
+// "out": "../css/style.css"
+
+@primary: #16a085;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    .tahoma();
+}
+body {
+	padding: 50px;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, ul, li, a, span, div, input, p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    text-decoration: none;
+    list-style: none;
+    color: #222;
+    .tahoma();
+}
+
+.tahoma() {
+    font-family: "Tahoma";
+    font-weight: 400;
+}
+.tahoma-bold() {
+    font-family: "Tahoma";
+    font-weight: 700;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 25px;
+	background: #000;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	transition: all 0.15s ease-out;
+
+	&:active {
+		transform: scale(0.95);
+	}
+}
+
+.modal-container {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s linear;
+	overflow-y: scroll;
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	.modal {
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		background-color: #fff;
+		width: 500px;
+		border-radius: 3px;
+		padding: 30px;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease-out;
+		transform: translateX(-50%) scale(0.5);
+
+		&.active {
+			transform: translateX(-50%) scale(1);
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.modal-title {
+			.tahoma-bold();
+			font-size: 20px;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		.modal-description {
+			line-height: 170%;
+			color: #444;
+			margin-bottom: 15px;
+		}
+		.btn-container {
+			.btn {
+
+			}
+		}
+	}
+}

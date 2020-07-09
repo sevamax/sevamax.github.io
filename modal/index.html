@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal example</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="site-container">
+		<div class="btn-container">
+			<a data-modal="#m1" class="btn">Open modal</a>
+			<a data-modal="#m2" class="btn">Open modal 2</a>
+			<a data-modal="#m3" class="btn">Open modal 3</a>
+		</div>
+	</div>
+
+	<div class="modal-container">
+		<div id="m1" class="modal">
+			<h2 class="modal-title">Some modal title</h2>
+			<p class="modal-description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa accusantium sunt at exercitationem, officia consequuntur. Laudantium recusandae tempora, ipsa non quo iure, quisquam eveniet excepturi a accusamus nisi obcaecati consectetur!
+			</p>
+			<div class="btn-container">
+				<a class="btn" data-modal="close">Close modal window</a>
+			</div>
+		</div>
+		<div id="m2" class="modal">
+			<h2 class="modal-title">Some modal title 2</h2>
+			<p class="modal-description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa accusantium sunt at exercitationem, officia consequuntur. Laudantium recusandae tempora, ipsa non quo iure, quisquam eveniet excepturi a accusamus nisi obcaecati consectetur!
+			</p>
+			<div class="btn-container">
+				<a class="btn" data-modal="close">Close modal window</a>
+			</div>
+		</div>
+		<div id="m3" class="modal">
+			<h2 class="modal-title">Some modal title 3</h2>
+			<p class="modal-description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa accusantium sunt at exercitationem, officia consequuntur. Laudantium recusandae tempora, ipsa non quo iure, quisquam eveniet excepturi a accusamus nisi obcaecati consectetur!
+			</p>
+			<div class="btn-container">
+				<a class="btn" data-modal="close">Close modal window</a>
+			</div>
+		</div>
+	</div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
