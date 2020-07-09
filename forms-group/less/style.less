@@ -1,0 +1,158 @@
+// out: ../css/style.css
+
+@primary: #2980b9;
+
+// Generals styles
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma";
+}
+h1, h2, h3, h4, h5, h6, ul, li, a, span, div, p, input {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	color: #000;
+	font-family: "Tahoma";
+	font-weight: normal;
+	list-style: none;
+	text-decoration: none;
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+body {
+	padding: 50px 100px;
+}
+
+
+// Elements
+input[type="checkbox"]:not(.special) {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	cursor: pointer;
+
+	&:checked {
+		background-color: @primary;
+		border-color: @primary;
+		background-image: url(../img/check.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 55%;
+	}
+}
+input[type="radio"] {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	height: 16px;
+	width: 16px;
+	background-color: #fff;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	transition: border 0.2s ease-out;
+
+	&:checked {
+		border-width: 5px;
+		border-color: @primary;
+	}
+}
+input[type="checkbox"].special {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	width: 26px;
+	height: 16px;
+	background-color: #ccc;
+	border-radius: 100px;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.2s ease-out;
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: 2px;
+		top: 2px;
+		height: 12px;
+		width: 12px;
+		background-color: #fff;
+		border-radius: 100%;
+		transition: all 0.2s ease-out;
+	}
+	&:checked {
+		background-color: @primary;
+
+		&:after {
+			transform: translateX(10px);
+		}
+	}
+}
+input[type="range"] {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		content: attr(min);
+	}
+	&:after {
+		position: absolute;
+		bottom: 15px;
+		right: 0;
+		content: attr(max);
+	}
+}
+
+// Components
+.input-group {
+	display: table;
+	max-width: 400px;
+
+	label {
+		display: table-cell;
+		width: 1%;
+		border: 1px solid #ccc;
+		border-right: none;
+		box-sizing: border-box;
+		padding: 10px 15px;
+		white-space: nowrap;
+	}
+	input {
+		display: table-cell;
+		width: 100%;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		padding: 10px 15px;
+		transition: all 0.2s ease-out;
+
+		&:focus {
+			border-color: @primary;
+		}
+	}
+	.btn {
+		display: table-cell;
+		width: 1%;
+		border: 1px solid #ccc;
+		border-left: none;
+		box-sizing: border-box;
+		padding: 10px 15px;
+	}
+}
+
+// Global styles
+.form-group {
+	margin-top: 20px;
+
+	input {
+		margin-right: 10px;
+	}
+}
