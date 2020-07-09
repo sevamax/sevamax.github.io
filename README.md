@@ -3,7 +3,7 @@
 
 Another projects 
 
-[Tabs](https://sevamax.github.io/tab/) - tabs
+[Tabs](https://sevamax.github.io/tab/) - tabs example
 
 [Fullpage](https://sevamax.github.io/Fullpage/) - fullpage page without adaptive
 
