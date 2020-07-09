@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+span,
+div,
+p,
+input {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 13px;
+  color: #000;
+  font-family: "Tahoma";
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  padding: 50px 100px;
+}
+.accordeon {
+  width: 400px;
+  display: block;
+}
+.accordeon .item .item-title {
+  background-color: #2980b9;
+  color: #fff;
+  padding: 10px 12px;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  position: relative;
+}
+.accordeon .item .item-title.active {
+  border-bottom: none;
+}
+.accordeon .item .item-title.active:after {
+  transform: translateY(-50%) rotate(270deg);
+}
+.accordeon .item .item-title:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  right: 12px;
+  background-image: url(../img/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  transition: all 0.2s ease-out;
+}
+.accordeon .item .item-content {
+  display: none;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  padding: 12px;
+}
+.accordeon .item .item-content:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.accordeon .item .item-content p {
+  line-height: 170%;
+}
