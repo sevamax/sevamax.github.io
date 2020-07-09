@@ -5,13 +5,13 @@ My homeworks!
 
 [Lesson 13](https://sevamax.github.io/lesson%2013/ "Homework") -- pp
 
-[Practice(1)](https://sevamax.github.io/header/ "Homework") -- First part of practise(logo + tel + btn)
+[Practice(1)](https://sevamax.github.io/header/ "Homework") -- First part of practice(logo + tel + btn)
 
 [Lesson 14](https://sevamax.github.io/fonts(%D0%94%D0%97)/ "Homework") -- fonts
 
 
-[Practice(2)](https://sevamax.github.io/practice(2)/ "Homework") -- 
+[Practice(2)](https://sevamax.github.io/practice(2)/ "Homework") --  Second part of practice (main section )
 
 [Lesson 15](https://sevamax.github.io/lesson%2015/ "Homework") -- pseudo-classes and pseudo-elements
 
-[Practice(3)](https://sevamax.github.iopractice(3)%20-%20mobile/ "Homework") -- Third part of practise ( adaptive main section )       
+[Practice(3)](https://sevamax.github.iopractice(3)%20-%20mobile/ "Homework") -- Third part of practice ( adaptive main section )       
