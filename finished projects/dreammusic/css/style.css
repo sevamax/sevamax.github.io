@@ -11,3 +11,16 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+.logo img {
+  display: block;
+  margin: 0 auto;;
+}
+
+.logo h1, p {
+    text-align: center;
+}
+
+.logo p {
+    font-weight: bold;
+}
