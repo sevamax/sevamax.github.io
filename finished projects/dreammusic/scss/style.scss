@@ -12,15 +12,17 @@
     vertical-align: middle;
 }
 
-.logo img {
-  display: block;
-  margin: 0 auto;;
+.logo {
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-weight: bold;
+    }
 }
 
-.logo h1, p {
-    text-align: center;
-}
-
-.logo p {
-    font-weight: bold;
-}
