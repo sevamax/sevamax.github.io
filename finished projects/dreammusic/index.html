@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
-    <title>DreamMusic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+   
+  <title>DreamMusic</title>
 </head>
 
 <body>
@@ -15,7 +17,7 @@
     <div class="login-block">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-8 col-lg-7">
             <div class="login-info">
               <div class="jumbotron jumbotron-fluid">
                 <div class="container logo">
@@ -31,22 +33,23 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <form>
-              <div class="form-group">
+          <div class="col-xl-4 col-lg-5">
+            <form class="login-form action">
+              <h2 class="login-form-header">Авторизация</h2>
+              <div class="form-group ">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">           </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1">
               </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              <div class="social-link">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa fa-google" aria-hidden="true"></i>
+                <i class="fa fa-apple" aria-hidden="true"></i>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-auto">Войти</button>
             </form>
           </div>
         </div>
