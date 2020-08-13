@@ -13,6 +13,13 @@ a:hover {
     text-decoration: none;
 }
 
+.content {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+h2 a {
+    color: #000000;
+}
 
 // login page
 .login-content {
@@ -113,6 +120,10 @@ a:hover {
             width: 20px;
         }
 
+        &.active-page {
+            color: #000000;
+        }
+
     }
 }
 
@@ -121,7 +132,7 @@ a:hover {
     position: fixed;
     top: 0;
     right: 0;
-    left: 26%;
+    left: 25%;
     background-color: $bg-color;
     z-index: 10;
     margin-bottom: 10px;
@@ -161,9 +172,9 @@ a:hover {
     margin: 50px 0;
 }
 
-section:first-of-type {
-    margin-top: 100px;
-}
+// section:first-of-type {
+//     margin-top: 100px;
+// }
 
 
 // player 
@@ -235,6 +246,7 @@ section:first-of-type {
     img {
         width: 264px;
         height: 264px;
+        margin-left: -14px;
     }
 
 
@@ -258,7 +270,8 @@ section:first-of-type {
             }
 
             &:last-of-type {
-                margin-bottom: 60px;
+                margin-bottom: 70px;
+                border-bottom: 1px solid rgba($color: #252525, $alpha: 0.4);
             }
         }
     }
@@ -274,170 +287,20 @@ section:first-of-type {
 }
 
 
+// albums 
 
-
-
-
-//media requests
-@media (max-width: 576px) {
-    .logo {
-        display: none;
+.albums {
+    img {
+        display: block;
     }
 
-
-    .top-bar {
-
-        .user {
-            p:first-of-type {
-                margin-right: 20px;
-                font-size: 17px;
-            }
-        }
-        .search::before {
-            content: '';
-            clear: both;
-            position: absolute;
-            top: 0px;
-            left: -33%;
-            background-image: url('/img/icons8-пластинка-64.png');
-            background-size: 50px 50px;
-            background-position: center center ;
-            background-repeat: no-repeat;
-            background-color: #f6f6f6;
-            width: 33%;
-            height: 91px;
-        }
-    }
-    .list-info {
-        img {
-            height: 164px;
-            width: 164px;
-        }
-    }
-
-    .track-container {
-        ul {
-            li {
-                &:last-of-type {
-                    margin-bottom: 110px;
-                }
-            }
-        }
-    }
-
-    .player {
-        height: 100px;
-
-        h3 {
-            font-size: 20px;
-        }
-
-        .player-control {
-            padding: 25px 5px;
-
-            .fa-fast-backward,
-            .fa-fast-forward {
-                position: relative;
-                top: 0;
-                font-size: 25px;
-            }
-
-            .fa-play-circle {
-                font-size: 30px;
-                margin: 0 8px;
-            }
-        }
+    p {
+        text-align: left;
     }
 }
 
-@media (min-width: 992px) {
-    .login-form {
-        padding-bottom: 69px;
-    }
-}
-@media (max-width: 991px) {
-    .top-bar {
 
-        .user {
-            p:first-of-type {
-                margin-right: 20px;
-                font-size: 17px;
-            }
-        }
-        .search::before {
-            content: '';
-            clear: both;
-            position: absolute;
-            top: 0px;
-            left: -33%;
-            background-image: url('/img/icons8-пластинка-64.png');
-            background-size: 50px 50px;
-            background-position: center center ;
-            background-repeat: no-repeat;
-            background-color: #f6f6f6;
-            width: 33%;
-            height: 91px;
-        }
-    }
 
-.list-item {
-    .dropdown-menu  {
-        width: 220px !important;
-        transform: translate3d(-69px, 22px, 0px) !important;
-
-        .dropdown-item {
-            white-space: normal;
-            margin-left: 12px;
-
-            &:first-of-type::before,
-            &:nth-child(2)::before,
-            &:last-of-type::before {
-                content: '';
-                clear: both;
-                display: block;
-                position: absolute;
-                top: 6%;
-                left: 0;
-                background-image: url('/img/icons8-следующий-100.png');
-                background-size: cover;
-                background-repeat: no-repeat;              
-                width: 30px;
-                height: 30px;
-            }
-            &:nth-child(2)::before {
-                top: 34%;
-                background-image: url('/img/icons8-плюс-64.png');
-                background-size: 25px 25px ;
-                background-position: center center;
-            }
-            &:last-of-type::before {
-                top: 70%;
-                background-image: url('/img/icons8-heart-plus-50.png');
-                background-size: 25px 25px ;
-                background-position: center center;
-            }
-        }
-    }
-}
-}
-
-@media (min-width: 1200px) {
-    .login-form {
-        padding-bottom: 45px;
-    }
-}
-@media (max-width: 1200px) {
-    .left-bar {
-        ul {
-            display: none;
-        }
-        .logo {
-            h1 {
-                display: none;
-            }
-        }
-    }
-}
 
 
 
@@ -490,4 +353,191 @@ a:-webkit-any-link:focus {
 
 :focus {
     outline: none;
+}
+//media requests
+
+
+@media(max-width: 880px) {
+    .slick-prev {
+        left: 88%;
+    }
+}
+@media (max-width: 685px) {
+    .slick-prev {
+        left: 87%;
+    }    
+}
+@media (max-width: 576px) {
+    .logo {
+        display: none;
+    }
+    .slick-prev {
+        left: 85%;
+    }
+
+    .top-bar {
+
+        .user {
+            p:first-of-type {
+                margin-right: 20px;
+                font-size: 17px;
+            }
+        }
+
+        .search::before {
+            content: '';
+            clear: both;
+            position: absolute;
+            top: 0px;
+            left: -33%;
+            background-image: url('/img/icons8-пластинка-64.png');
+            background-size: 50px 50px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: #f6f6f6;
+            width: 33%;
+            height: 91px;
+        }
+    }
+
+    .list-info {
+        img {
+            height: 164px;
+            width: 164px;
+            margin-left: 0;
+        }
+    }
+
+    .track-container {
+        ul {
+            li {
+                &:last-of-type {
+                    margin-bottom: 110px;
+                }
+            }
+        }
+    }
+
+    .player {
+        height: 100px;
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .player-control {
+            padding: 25px 5px;
+
+            .fa-fast-backward,
+            .fa-fast-forward {
+                position: relative;
+                top: 0;
+                font-size: 25px;
+            }
+
+            .fa-play-circle {
+                font-size: 30px;
+                margin: 0 8px;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .slick-prev {
+        left: 83%;
+    }
+}
+@media (min-width: 992px) {
+    .login-form {
+        padding-bottom: 69px;
+    }
+}
+
+@media (max-width: 991px) {
+    .top-bar {
+
+        .user {
+            p:first-of-type {
+                margin-right: 20px;
+                font-size: 17px;
+            }
+        }
+
+        .search::before {
+            content: '';
+            clear: both;
+            position: absolute;
+            top: 0px;
+            left: -33%;
+            background-image: url('/img/icons8-пластинка-64.png');
+            background-size: 50px 50px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: #f6f6f6;
+            width: 33%;
+            height: 91px;
+        }
+    }
+
+    .list-item {
+        .dropdown-menu {
+            width: 220px !important;
+            transform: translate3d(-69px, 22px, 0px) !important;
+
+            .dropdown-item {
+                white-space: normal;
+                margin-left: 12px;
+
+                &:first-of-type::before,
+                &:nth-child(2)::before,
+                &:last-of-type::before {
+                    content: '';
+                    clear: both;
+                    display: block;
+                    position: absolute;
+                    top: 6%;
+                    left: 0;
+                    background-image: url('/img/icons8-следующий-100.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:nth-child(2)::before {
+                    top: 34%;
+                    background-image: url('/img/icons8-плюс-64.png');
+                    background-size: 25px 25px;
+                    background-position: center center;
+                }
+
+                &:last-of-type::before {
+                    top: 70%;
+                    background-image: url('/img/icons8-heart-plus-50.png');
+                    background-size: 25px 25px;
+                    background-position: center center;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .login-form {
+        padding-bottom: 45px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .left-bar {
+        ul {
+            display: none;
+        }
+
+        .logo {
+            h1 {
+                display: none;
+            }
+        }
+    }
 }
