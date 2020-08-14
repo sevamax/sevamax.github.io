@@ -367,81 +367,7 @@ a:-webkit-any-link:focus {
         left: 87%;
     }    
 }
-@media (max-width: 576px) {
-    .logo {
-        display: none;
-    }
-    .slick-prev {
-        left: 85%;
-    }
 
-    .top-bar {
-
-        .user {
-            p:first-of-type {
-                margin-right: 20px;
-                font-size: 17px;
-            }
-        }
-
-        .search::before {
-            content: '';
-            clear: both;
-            position: absolute;
-            top: 0px;
-            left: -33%;
-            background-image: url('../img/icons8-пластинка-64.png');
-            background-size: 50px 50px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-color: #f6f6f6;
-            width: 33%;
-            height: 91px;
-        }
-    }
-
-    .list-info {
-        img {
-            height: 164px;
-            width: 164px;
-            margin-left: 0;
-        }
-    }
-
-    .track-container {
-        ul {
-            li {
-                &:last-of-type {
-                    margin-bottom: 110px;
-                }
-            }
-        }
-    }
-
-    .player {
-        height: 100px;
-
-        h3 {
-            font-size: 20px;
-        }
-
-        .player-control {
-            padding: 25px 5px;
-
-            .fa-fast-backward,
-            .fa-fast-forward {
-                position: relative;
-                top: 0;
-                font-size: 25px;
-            }
-
-            .fa-play-circle {
-                font-size: 30px;
-                margin: 0 8px;
-            }
-        }
-    }
-}
 @media (max-width: 500px) {
     .slick-prev {
         left: 83%;
@@ -521,7 +447,81 @@ a:-webkit-any-link:focus {
         }
     }
 }
+@media (max-width: 576px) {
+    .logo {
+        display: none;
+    }
+    .slick-prev {
+        left: 85%;
+    }
 
+    .top-bar {
+
+        .user {
+            p:first-of-type {
+                margin-right: 20px;
+                font-size: 17px;
+            }
+        }
+
+        .search::before {
+            content: '';
+            clear: both;
+            position: absolute;
+            top: 0px;
+            left: -33%;
+            background-image: url('../img/icons8-пластинка-64.png');
+            background-size: 50px 50px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: #f6f6f6;
+            width: 33%;
+            height: 91px;
+        }
+    }
+
+    .list-info {
+        img {
+            height: 164px;
+            width: 164px;
+            margin-left: 0;
+        }
+    }
+
+    .track-container {
+        ul {
+            li {
+                &:last-of-type {
+                    margin-bottom: 110px;
+                }
+            }
+        }
+    }
+
+    .player {
+        height: 100px;
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .player-control {
+            padding: 25px 5px;
+
+            .fa-fast-backward,
+            .fa-fast-forward {
+                position: relative;
+                top: 0;
+                font-size: 25px;
+            }
+
+            .fa-play-circle {
+                font-size: 30px;
+                margin: 0 8px;
+            }
+        }
+    }
+}
 @media (min-width: 1200px) {
     .login-form {
         padding-bottom: 45px;
