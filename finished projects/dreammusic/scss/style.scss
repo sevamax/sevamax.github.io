@@ -233,6 +233,9 @@ h2 a {
 
 
 // list 
+.back-mob {
+    display: none;
+}
 
 .list-info {
     margin-top: 100px;
@@ -381,7 +384,26 @@ a:-webkit-any-link:focus {
 }
 
 @media (max-width: 991px) {
-    
+    .back-mob {
+        display: block;
+        i {
+            color: #f6f6f6;
+            width: 50px;
+            height: 46px;
+            position: absolute;
+            top: -7%;
+            z-index: 10;
+            left: 8%;
+        }
+    }
+    .back-mob-playlist {
+        i {
+            top: -90px;
+            width: 63px;
+            height: 58px;
+            left: 7%;
+        }
+    }
     .top-bar {
 
         .user {
@@ -560,5 +582,10 @@ a:-webkit-any-link:focus {
             }
         }
 
+    }
+}
+@media (max-width: 400px) {
+    .slick-prev {
+        left: 83%;
     }
 }
