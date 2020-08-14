@@ -381,6 +381,7 @@ a:-webkit-any-link:focus {
 }
 
 @media (max-width: 991px) {
+    
     .top-bar {
 
         .user {
@@ -405,7 +406,9 @@ a:-webkit-any-link:focus {
             height: 91px;
         }
     }
-
+    .list-info {
+        margin-top: 20px;
+    }
     .list-item {
         .dropdown-menu {
             width: 220px !important;
@@ -424,7 +427,7 @@ a:-webkit-any-link:focus {
                     position: absolute;
                     top: 6%;
                     left: 0;
-                    background-image: url('/img/icons8-следующий-100.png');
+                    background-image: url('../img/icons8-следующий-100.png');
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 30px;
@@ -433,14 +436,14 @@ a:-webkit-any-link:focus {
 
                 &:nth-child(2)::before {
                     top: 34%;
-                    background-image: url('/img/icons8-плюс-64.png');
+                    background-image: url('../img/icons8-плюс-64.png');
                     background-size: 25px 25px;
                     background-position: center center;
                 }
 
                 &:last-of-type::before {
                     top: 70%;
-                    background-image: url('/img/icons8-heart-plus-50.png');
+                    background-image: url('../img/icons8-heart-plus-50.png');
                     background-size: 25px 25px;
                     background-position: center center;
                 }
@@ -513,21 +516,25 @@ a:-webkit-any-link:focus {
         ul {
             li {
                 &:last-of-type {
-                    margin-bottom: 110px;
+                    margin-bottom: 70px;
                 }
             }
         }
     }
 
     .player {
-        height: 100px;
+        height:75px;
+        .player-left {
+            margin-right: 4px;
 
-        h3 {
-            font-size: 20px;
+            h3 {
+                font-size: 18px;
+            }
         }
 
+
         .player-control {
-            padding: 25px 5px;
+            padding: 15px 5px;
 
             .fa-fast-backward,
             .fa-fast-forward {
@@ -540,6 +547,16 @@ a:-webkit-any-link:focus {
                 font-size: 30px;
                 margin: 0 8px;
             }
+
         }
+        .player-right {
+            flex: 0;
+
+            .fa-thumbs-o-up,
+            .fa-thumbs-o-down {
+                display: none;
+            }
+        }
+
     }
 }
