@@ -368,6 +368,47 @@ a:-webkit-any-link:focus {
     }    
 }
 
+@media (max-width: 576px) {
+    .logo {
+        display: none;
+    }
+    .slick-prev {
+        left: 85%;
+    }
+
+    .top-bar {
+
+        .user {
+            p:first-of-type {
+                margin-right: 20px;
+                font-size: 17px;
+            }
+        }
+
+        .search::before {
+            content: '';
+            clear: both;
+            position: absolute;
+            top: 0px;
+            left: -33%;
+            background-image: url('../img/icons8-пластинка-64.png');
+            background-size: 50px 50px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: #f6f6f6;
+            width: 33%;
+            height: 91px;
+        }
+    }
+
+    .list-info {
+        img {
+            height: 164px;
+            width: 164px;
+            margin-left: 0;
+        }
+    }
+
 @media (max-width: 500px) {
     .slick-prev {
         left: 83%;
