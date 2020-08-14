@@ -412,7 +412,7 @@ a:-webkit-any-link:focus {
     .list-item {
         .dropdown-menu {
             width: 220px !important;
-            transform: translate3d(-69px, 22px, 0px) !important;
+            transform: translate3d(-69px, -166px, 0px) !important;
 
             .dropdown-item {
                 white-space: normal;
@@ -516,7 +516,7 @@ a:-webkit-any-link:focus {
         ul {
             li {
                 &:last-of-type {
-                    margin-bottom: 70px;
+                    margin-bottom: 50px;
                 }
             }
         }
@@ -525,11 +525,12 @@ a:-webkit-any-link:focus {
     .player {
         height:75px;
         .player-left {
-            margin-right: 4px;
-
+            // margin-right: 4px;
             h3 {
                 font-size: 18px;
+
             }
+
         }
 
 
@@ -544,14 +545,15 @@ a:-webkit-any-link:focus {
             }
 
             .fa-play-circle {
-                font-size: 30px;
+                font-size: 28px;
                 margin: 0 8px;
             }
 
         }
         .player-right {
-            flex: 0;
-
+            // flex: 0;
+            display: none;
+            visibility: hidden;
             .fa-thumbs-o-up,
             .fa-thumbs-o-down {
                 display: none;
