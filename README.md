@@ -52,5 +52,5 @@ My homeworks!
 
 [Practice(3)](https://sevamax.github.io/practice(3)%20-%20mobile/ "Homework") -- Third part of practice ( adaptive main section )    
 
-[Lesson 16](https://sevamax.github.io/lesson_16/ "Homework") --sliders
+[Lesson 16](https://sevamax.github.io/lesson%20_16/ "Homework") --sliders
 
