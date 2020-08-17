@@ -50,5 +50,6 @@ My homeworks!
 
 [Lesson 15](https://sevamax.github.io/lesson%2015/ "Homework") -- pseudo-classes and pseudo-elements
 
-[Practice(3)](https://sevamax.github.io/practice(3)%20-%20mobile/ "Homework") -- Third part of practice ( adaptive main section )       
+[Practice(3)](https://sevamax.github.io/practice(3)%20-%20mobile/ "Homework") -- Third part of practice ( adaptive main section )    
+[Lesson 16](https://sevamax.github.io/lesson_16/ "Homework") --sliders
 
