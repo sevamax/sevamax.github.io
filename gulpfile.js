@@ -1,3 +1,5 @@
+// под папку Practice
+
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
@@ -13,7 +15,7 @@ const { parallel } = require('gulp');
 
 function toCss(done){
 
-    gulp.src('./scss/**/*')
+    gulp.src('./Practice/scss/**/*')
       .pipe(sourceMap.init())
       .pipe(sass({
           errorLogToConsole: true,
@@ -26,7 +28,7 @@ function toCss(done){
       }))
       .pipe( rename({suffix: '.min'}))
       .pipe(sourceMap.write('./'))
-      .pipe( gulp.dest('./css') )
+      .pipe( gulp.dest('./Practice/css') )
       .pipe(browserSync.stream());
 
     done();
