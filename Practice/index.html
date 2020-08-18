@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Автоматизированая штукатурка стен</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>   
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,7 +25,8 @@
                             <img src="img/logo.png" alt="Гипсолит. Штукатурка стен">
                         </div>
                     </div>
-                    <div class="col-xl-2 offset-xl-4 col-lg-4 offset-lg-2  col-md-4 offset-md-0 col-sm-4 offset-sm-0 col-xs-12 phone-link-block">
+                    <div
+                        class="col-xl-2 offset-xl-4 col-lg-4 offset-lg-2  col-md-4 offset-md-0 col-sm-4 offset-sm-0 col-xs-12 phone-link-block">
                         <a class="phone-link" href="#">+7 495 771 05 08</a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
@@ -55,18 +59,18 @@
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
                         <div class="main-form">
                             <h2>Для расчёта точной стоимости закажите
-                                 <strong>выезд замерщика</strong></h2>
-                                <form action="#">
-                                    <label for="name">Ваше имя</label>
-                                    <input class="main-form-input" id="name" type="text">
-                                    <label for="phone">Номер телефона</label>
-                                    <input class="main-form-input" id="phone" type="text">
-                                    <button class="main-form-btn btn" type="submit">Оставьте заявку</button>
-                                </form>
-                                <small>Приедем в день обращения*</small>
+                                <strong>выезд замерщика</strong></h2>
+                            <form action="#">
+                                <label for="name">Ваше имя</label>
+                                <input class="main-form-input" id="name" type="text">
+                                <label for="phone">Номер телефона</label>
+                                <input class="main-form-input" id="phone" type="text">
+                                <button class="main-form-btn btn" type="submit">Оставьте заявку</button>
+                            </form>
+                            <small>Приедем в день обращения*</small>
                         </div>
                         <div class="main-reference">
-                            <p>* - выезды на замер осуществляются 
+                            <p>* - выезды на замер осуществляются
                                 в рабоче дни Пн-Пт с 9:00 до 18:00</p>
                         </div>
                     </div>
@@ -74,7 +78,70 @@
             </div>
         </div>
     </main>
-    <script src="/src/js/main.js"></script>
+    <section class="features">
+        <div class="container">
+            <h2 class="section__header">
+                Преимущества работы с нами
+            </h2>
+            <div class="features__slider">
+                <div class="features__block">
+                    <div class="features_img">
+                        <picture>
+                            <source srcset="img/features_coin.svg" type="image/">
+                            <img src="img/features_coin.png" alt="Платите по факту">
+                        </picture>
+                    </div>
+                    <h3>Платите по факту</h3>
+                    <p>
+                        Вы оплачиваете выполненные работы только после их выполнения.<br>
+                        Никаких скрытых доплат и промежуточных платежей.
+                    </p>
+                </div>
+                <div class="features__block">
+                    <div class="features_img">
+                        <picture>
+                            <source srcset="img/features_doc.svg" type="image/">
+                            <img src="img/features_doc.png" alt="Заключаем договор">
+                        </picture>
+                    </div>
+                    <h3> Заключаем договор</h3>
+                    <p>
+                        Перед началом работ заключаем договор на юридическое лицо.<br>
+                        Вы можете быть уверены, что все обязательства будут выполнены.
+                    </p>
+                </div>
+                <div class="features__block">
+                    <div class="features_img">
+                        <picture>
+                            <source srcset="img/features_time.svg" type="image/">
+                            <img src="img/features_time.png" alt="Точно в срок">
+                        </picture>
+                    </div>
+                    <h3>Точно в срок</h3>
+                    <p>Работаем строго по установленным срокам, которые прописаны   
+                        в договоре. Если не успеваем, Вы платите меньше</p>
+                </div>
+                <div class="features__block">
+                    <div class="features_img">
+                        <picture>
+                            <source srcset="img/features_bank.svg" type="image/">
+                            <img src="img/features_bank.png" alt="Экономите на материалах">
+                        </picture>
+                    </div>
+                    <h3>Экономите на материалах</h3>
+                    <p>Мы являемся структурным подразделением компании поставщика<br>
+                        строительных смесей gicema.ru и даём Вам самые
+                        выгодные цены.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
