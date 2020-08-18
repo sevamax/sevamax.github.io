@@ -41,7 +41,7 @@ My homeworks!
 
 [Lesson 13](https://sevamax.github.io/lesson%2013/ "Homework") -- pp
 
-[Practice(1)](https://sevamax.github.io/header/ "Homework") -- First part of practice(logo + tel + btn)
+[Practice](https://sevamax.github.io/Practice/ "Homework")
 
 [Lesson 14](https://sevamax.github.io/fonts(%D0%94%D0%97)/ "Homework") -- fonts
 
