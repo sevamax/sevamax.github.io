@@ -21,6 +21,7 @@ Another projects
 [Spinners](https://sevamax.github.io/spinners/) - groupe of spinners
 
 [Tabs](https://sevamax.github.io/tab/) - tabs example
+
 [Parallax-Mountains](https://sevamax.github.io/Parallax) - interesting parallax-page
 
 
