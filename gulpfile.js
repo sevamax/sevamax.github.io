@@ -15,7 +15,7 @@ const { parallel } = require('gulp');
 
 function toCss(done){
 
-    gulp.src('./Practice/scss/**/*')
+    gulp.src('./Parallax/scss/**/*')
       .pipe(sourceMap.init())
       .pipe(sass({
           errorLogToConsole: true,
@@ -28,28 +28,28 @@ function toCss(done){
       }))
       .pipe( rename({suffix: '.min'}))
       .pipe(sourceMap.write('./'))
-      .pipe( gulp.dest('./Practice/css') )
+      .pipe( gulp.dest('./Parallax/css') )
       .pipe(browserSync.stream());
 
     done();
 }
 
 function minjs(done) {
-    gulp.src("./Practice/js/main.js")
+    gulp.src("./Parallax/js/*.js")
     .pipe(minify({
         ext: {
             min: '.min.js'
         },
         ignoreFiles: ['-min.js']
     }))
-    .pipe(gulp.dest("./Practice/js"));
+    .pipe(gulp.dest("./Parallax/js"));
     done();
 }
 
 function browserStarts(done) {
     browserSync.init({
         server: {
-            baseDir: "./Practice/"
+            baseDir: "./Parallax/"
         },
         port: 3000
     });
@@ -69,10 +69,10 @@ function print(done) {
 
 
 function watchFiles() {
-    gulp.watch("./Practice/scss/**/*.scss", toCss);
-    gulp.watch("./Practice/**/*.html", browserReload);
-    gulp.watch("./Practice/**/*.php", browserReload);
-    gulp.watch("./Practice/**/*.js", browserReload);
+    gulp.watch("./Parallax/scss/**/*.scss", toCss);
+    gulp.watch("./Parallax/**/*.html", browserReload);
+    gulp.watch("./Parallax/**/*.php", browserReload);
+    gulp.watch("./Parallax/**/*.js", browserReload);
 }
 
 exports.default = parallel(print, watchFiles, browserStarts);

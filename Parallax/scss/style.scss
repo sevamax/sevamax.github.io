@@ -1,0 +1,83 @@
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.parallax {
+  position: relative;
+  height: 100%;
+  &__mountain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    &_1 {
+      background: url('../img/m_1.png') 0 0 /cover no-repeat;
+    }
+    &_2 {
+      background: url('../img/m_2.png') bottom right /45% no-repeat;
+      z-index: 1;
+    }
+    &_3 {
+      background: url('../img/m_3.png') bottom left /100% no-repeat;
+      z-index: 1;
+    }
+  }
+  &__fog {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: url('../img/fog_1.png') bottom /100% no-repeat; 
+  }
+}
+
+
+.content {
+  position: relative;
+  .content__body {
+    max-width: 1200px;
+    margin: 0 auto;
+    .content__header {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding: 0 20px;
+      .content__title {
+        font-size: 90px;
+      }
+      .content__subtitle {
+      font-size: 75px;
+        p {
+          font-size: 18px;
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 25px;
+          font-size: 18px;
+          line-height: 24px;
+          text-transform: initial;
+        }
+      }
+    }
+    .content__article {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 25px;
+      font-size: 18px;
+      line-height: 24px;
+      p {
+        padding-bottom: 10px;
+      }
+      h3 {
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+
+  }
+
+}
