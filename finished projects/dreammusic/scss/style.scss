@@ -14,7 +14,7 @@ a:hover {
 }
 
 .content {
-    margin-top: 100px;
+    margin-top: 115px;
     margin-bottom: 50px;
 }
 h2 a {
@@ -127,6 +127,30 @@ h2 a {
     }
 }
 
+.menu {
+    position: fixed;
+    width: 20%;
+    top: 150px;
+    left: 0;
+    z-index: 50;
+}
+.menu::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $bg-color;
+    z-index: 2;
+}
+.menu ul {
+    position: relative;
+    z-index: 3;
+}
+.burger-menu {
+    display: none;
+}
 
 .top-fixed {
     position: fixed;
@@ -173,7 +197,7 @@ h2 a {
 }
 
 // section:first-of-type {
-//     margin-top: 100px;
+//     margin-top: 70px;
 // }
 
 
@@ -372,18 +396,18 @@ a:-webkit-any-link:focus {
     }    
 }
 
-@media (max-width: 500px) {
-    .slick-prev {
-        left: 83%;
-    }
-}
+
 @media (min-width: 992px) {
     .login-form {
         padding-bottom: 69px;
     }
+
 }
 
 @media (max-width: 991px) {
+    content.lock {
+        overflow: hidden;
+    }
     .back-mob {
         display: block;
         i {
@@ -472,25 +496,118 @@ a:-webkit-any-link:focus {
             }
         }
     }
+
+
+    .burger-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        
+        span {
+            background-color: #252525;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 10px;
+            transition: all 0.3s ease;
+        }
+        &::before,
+        &::after {
+            content: '';
+            background-color: #252525;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease;
+        }
+        &::before {
+            top: 0;
+            height: 4px;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+    .burger-menu.active::before {
+        transform: rotate(45deg);
+        top: 10px;
+        height: 2px;
+    }
+    .burger-menu.active::after {
+        transform: rotate(-45deg);
+        bottom: 7px;
+    }
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+    .left-bar .menu {
+        position: fixed;
+        left: -100%;
+        z-index: 1020;
+        top: 120px;
+        width: 25%;
+        height: 100%;
+        transition: all 0.3 ease 0s;
+        background-color: #184295;
+        ul li {
+            margin-bottom: 30px;
+        
+            a {
+                color: #fff;
+            }
+            &:hover {
+                background-color: #aa3401
+            }
+        }
+        
+    }   
+    .menu::before {
+        background-color: #aa3401;
+
+    }
+    .menu.active {
+        left: 0;
+    }
+    .content{
+        transition: all 0.3 ease 0s;
+        position: relative;
+        left: 0;
+    }
+    .content.active {
+        position: relative;
+        left: 300px;
+    }
+
+    .logo h1 {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
     .login-form {
         padding-bottom: 45px;
     }
+
 }
 
 @media (max-width: 1200px) {
     .left-bar {
-        ul {
-            display: none;
+        ul li a {
+            font-size: 16px;
         }
+        
 
         .logo {
             h1 {
-                display: none;
+                font-size: 40px;
             }
         }
+    }
+    .slick-slide.slick-cloned:nth-of-type(3) {
+        visibility: hidden;
     }
 }
 @media (max-width: 576px) {
@@ -499,6 +616,20 @@ a:-webkit-any-link:focus {
     }
     .slick-prev {
         left: 85%;
+    }
+    .left-bar .menu {
+        width: 30%;
+    }
+    .burger-menu {
+        display: block;
+        position: relative;
+        top: 65px;
+        width: 30px;
+        height: 20px;
+        &::before {
+            top: 2px;
+            height: 2px;
+        }
     }
 
     .top-bar {
@@ -584,8 +715,19 @@ a:-webkit-any-link:focus {
 
     }
 }
+@media (max-width: 500px) {
+    .slick-prev {
+        left: 83%;
+    }
+
+}
 @media (max-width: 400px) {
     .slick-prev {
         left: 83%;
     }
+}
+
+
+.active_a  {
+    color: #000 !important;
 }

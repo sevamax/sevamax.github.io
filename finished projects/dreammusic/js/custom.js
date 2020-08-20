@@ -36,3 +36,9 @@ $('.responsive').slick({
 $('.responsive').slick({
   accessibility: false,
 });
+$(document).ready(function() {
+  $('.burger-menu').click(function(e) {
+    $('.burger-menu, .menu, .content').toggleClass('active');
+    $('.content').toggleClass('lock');
+  });
+})
