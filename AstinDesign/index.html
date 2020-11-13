@@ -8,9 +8,9 @@
         content="Astin Design, графический дизайн, создание сайтов. Разработка и продвижение интернет-проектов">
     <meta name="keywords" content="web studio веб студия разработка сайтов">
     <title> AstinDesign</title>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./lib/slick/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="./lib/slick/slick-theme.min.css" />
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/lib/slick/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/slick/slick-theme.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
 </head>
 
@@ -111,12 +111,20 @@
                         </div>
                         <div class="benefits__photo-wrapper">
                             <picture>
-                                <source srcset="./img/benefit_two.jpg" media="(min-width: 768px)">
+                                <source srcset="./img/benefit_two.webp" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
 
-                                <img src="./img/benefit_two-mobile.jpg" width="540" height="398"
-                                    alt="Benefit two photo - design">
+                                <source srcset="./img/benefit_two.png"
+                                         media="(min-width: 768px)">
+
+                                <source srcset="./img/benefit_two-mobile.webp"
+                                        type="image/webp">
+
+                                <img src="./img/benefit_two.png"
+                                  width="540" height="405" 
+                                   alt="Benefit four photo - For startups">
                             </picture>
-                            <!-- <img src="./img/benefit_two.jpg" width="540" height="398" alt="Benefit two photo - design"> -->
                         </div>
                     </div>
 
@@ -133,15 +141,19 @@
                         </div>
                         <div class="benefits__photo-wrapper">
                             <picture>
-                                <source srcset="./img/Full_development_cycle.webp" 
+                                <source srcset="./img/benefit_three.webp" 
                                     media="(min-width: 768px)"
                                     type="image/webp">
 
-                                <source srcset="./img/Full_development_cycle.png" media="(min-width: 768px)">
+                                <source srcset="./img/benefit_three.png"
+                                         media="(min-width: 768px)">
 
-                                <source srcset="./img/Full_development_cycle-mobile.webp" type="image/webp">
+                                <source srcset="./img/benefit_three-mobile.webp"
+                                        type="image/webp">
 
-                                <img src="./img/Full_development_cycle.png"  width="540" height="405"  alt="Benefit four photo - For startups">
+                                <img src="./img/benefit_three.png"
+                                  width="540" height="405" 
+                                   alt="Benefit four photo - For startups">
                             </picture>
                         </div>
                     </div>
@@ -168,13 +180,19 @@
                         </div>
                         <div class="benefits__photo-wrapper">
                             <picture>
-                                <source srcset="./img/For_startups.webp" media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./img/benefit_four.webp"
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
 
-                                <source srcset="./img/For_startups.png" media="(min-width: 768px)">
+                                <source srcset="./img/benefit_four.png"
+                                        media="(min-width: 768px)">
 
-                                <source srcset="./img/For_startups-mobile.webp" type="image/webp">
+                                <source srcset="./img/benefit_four-mobile.webp"
+                                        type="image/webp">
 
-                                <img src="./img/For_startups-mobile.png" width="540" height="405" alt="Benefit four photo - For startups">
+                                <img src="./img/benefit_four-mobile.png"
+                                    width="540" height="405" 
+                                    alt="Benefit four photo - For startups">
                             </picture>
                         </div>
                     </div>
@@ -195,12 +213,20 @@
                         </div>
                         <div class="benefits__photo-wrapper">
                             <picture>
-                                <source srcset="./img/benefit_five.jpg" media="(min-width: 768px)">
+                                <source srcset="./img/benefit_five.webp"
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
 
-                                <img src="./img/benefit_five-mobile.jpg" width="540" height="405"
-                                    alt="Benefit five photo - Result guarantee">
-                            </picture>
-                            <!-- <img src="./img/benefit_five.jpg" width="540" height="405" alt="Benefit five photo - Result guarantee"> -->
+                                <source srcset="./img/benefit_five.png"
+                                        media="(min-width: 768px)">
+
+                                <source srcset="./img/benefit_five-mobile.webp"
+                                        type="image/webp">
+
+                                <img src="./img/benefit_five-mobile.png"
+                                    width="540" height="405" 
+                                    alt="Benefit four photo - For startups">
+                            </picture>  
                         </div>
                     </div>
 
@@ -219,12 +245,20 @@
                         </div>
                         <div class="benefits__photo-wrapper">
                             <picture>
-                                <source srcset="./img/benefit_one.jpg" media="(min-width: 768px)">
+                                <source srcset="./img/benefit_one.webp"    
+                                        media="(min-width: 768px)"
+                                        type="image/webp">
 
-                                <img src="./img/benefit_one-mobile.jpg" width="540" height="403"
-                                    alt="Benefit three photo - Full development cycle">
+                                <source srcset="./img/benefit_one.png"
+                                        media="(min-width: 768px)">
+        
+                                <source srcset="./img/benefit_one-mobile.webp" 
+                                        type="image/webp">
+        
+                                <img src="./img/benefit_one-mobile.png"
+                                     width="540" height="405" 
+                                     alt="Benefit one photo - Product first">
                             </picture>
-                            <!-- <img src="./img/benefit_one.jpg" width="540" height="403" alt="Benefit one photo - Product first"> -->
                         </div>
                     </div>
 
@@ -472,9 +506,9 @@
         </div>
     </footer>
 
-    <script src="./lib/jquery/dist/jquery-351.min.js"></script>
-    <script src="./lib/slick/slick.min.js"></script>
-    <script src="./js/site.min.js" asp-append-version="true"></script>
+    <script src="/lib/jquery/dist/jquery-351.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="/js/site.min.js" asp-append-version="true"></script>
 </body>
 
 </html>
