@@ -1,0 +1,78 @@
+
+
+@font-face {
+    font-family: 'Panton';
+    src: url('Panton-Bold.eot');
+    src: url('Panton-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Panton-Bold.woff2') format('woff2'),
+        url('Panton-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('Panton-Black.eot');
+    src: url('Panton-Black.eot?#iefix') format('embedded-opentype'),
+        url('Panton-Black.woff2') format('woff2'),
+        url('Panton-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('Panton-SemiBold.eot');
+    src: url('Panton-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Panton-SemiBold.woff2') format('woff2'),
+        url('Panton-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('SourceSansPro-Bold.eot');
+    src: url('SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SourceSansPro-Bold.woff2') format('woff2'),
+        url('SourceSansPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton Narrow Light Caps';
+    src: url('PantonNarrow-LightCaps.eot');
+    src: url('PantonNarrow-LightCaps.eot?#iefix') format('embedded-opentype'),
+        url('PantonNarrow-LightCaps.woff2') format('woff2'),
+        url('PantonNarrow-LightCaps.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('SourceSansPro-Regular.eot');
+    src: url('SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SourceSansPro-Regular.woff2') format('woff2'),
+        url('SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Panton Light Caps';
+    src: url('Panton-LightCaps.eot');
+    src: url('Panton-LightCaps.eot?#iefix') format('embedded-opentype'),
+        url('Panton-LightCaps.woff2') format('woff2'),
+        url('Panton-LightCaps.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
