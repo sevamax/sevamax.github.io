@@ -4,6 +4,8 @@
 
 [device](https://sevamax.github.io/device/) - device 
 
+[AstinDesign](https:///sevamax.github.io/AstinDesign/) - AstinDesign
+
 Another projects 
 
 [Accordeon](https://sevamax.github.io/accordeon/) - accordeon example
