@@ -19,8 +19,10 @@ let textCredit = document.querySelector('.customers-slider-section-credit');
 
 let mainNav = document.querySelector('.main-navigation');
 
+let searchInput = document.querySelector('.search__input');
+let searchButton = document.querySelector('.search__btn');
 
-
+/* Visible header catalog */
 
 catalogTitle.addEventListener('click', e => {
   catalogList.classList.toggle('visible');
@@ -41,6 +43,7 @@ catalogPlus.addEventListener('click', e => {
 
 });
 
+/* Popular Item switcher */
 
 for (let popularRadioFirst of popularRadiosFirst) {
   popularRadioFirst.onchange = function () {
@@ -67,6 +70,7 @@ for (let popularRadioThird of popularRadiosThird) {
   }
 }
 
+/* Services switcher */
 
 
 servicesDelivery.addEventListener('click', e => {
@@ -98,3 +102,31 @@ servicesCredit.addEventListener('click', e => {
   textWarranty.hidden = true;
   textCredit.hidden = false;
 });
+
+/* Seach  */
+
+/* clean input  */
+
+searchButton.onclick = function() {
+  console.log(searchInput.value);
+  searchInput.value = '';
+}
+
+/* input enter */
+
+searchInput.addEventListener("keydown", function(event) {
+  if (event.keyCode === 13) {
+      searchButton.style.color = "#ffffff";
+      searchButton.style.backgroundColor = "#000000";
+  }
+});
+
+searchInput.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    searchButton.style.color = null;
+    searchButton.style.backgroundColor = null;
+    searchButton.click();
+  }
+});
+
