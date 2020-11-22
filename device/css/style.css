@@ -1281,6 +1281,75 @@ h2.catalog-title,
     user-select: none;
 }
 
+/* range */
+
+.range-filter {
+    width: 100%;
+}
+
+.range-controls {
+    position: relative;
+    height: 16px;
+    padding-top: 39px;
+    background-color: transparent;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background-color: #91c92f;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 0;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-controls label {
+    margin-left: 0;
+    text-transform: lowercase;
+    font-family: 'Gilroy Light', Tahoma, sans-serif;
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+.price-controls input {
+    width: 80px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+}
 
 /* Filter Color */
 
