@@ -80,10 +80,27 @@
                         <h2 class="section-title container">Фильтр:</h2>
                     </div>
                     <div class="filter__wrapper container">
-
+                        <form action="#" method="POST">
                         <h3 class="filter-subtitle">Стоимость</h3>
-                        <input type="range" aria-label="Фильтр по стоимости">
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar">
 
+                                    </div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0"></div>
+                                <div class="toggle toggle-max" tabindex="0"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label for="" class="min-price">
+                                    от <input type="number" name="min-price" value="0">
+                                </label>
+                                <label for="" class="max-price">
+                                    до <input type="number" name="max-price" value="15000">
+                                </label>
+                            </div>
+                        </div>
                         <h3 class="filter-subtitle">Цвет</h3>
                         <ul class="filter-color">
                             <li>
@@ -120,8 +137,9 @@
                             </li>
                         </ul>
 
-                        <button class="btn-info btn-info-show" type="button"
+                        <button class="btn-info btn-info-show" type="submit"
                             aria-label="Показать товары с выбранными фильтрами"></button>
+                        </form>
                     </div>
                 </section>
                 <section class="content">
