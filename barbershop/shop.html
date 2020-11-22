@@ -14,18 +14,18 @@
 <body class="page-body inner-page">
     <header class="main-header">
         <nav class="main-navigation container">
-            <a class="main-header-logo" href="index">
+            <a class="main-header-logo" href="index.html">
                 <img src="img/svg/logo.svg" width="110" height="25" alt="Логотип барбершопа &quot;Бородинский&quot;">
             </a>
             <ul class="site-navigation">
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="price.html">Прайс-лист</a></li>
-                <li><a class="current-page" href="shop.html">Магазин</a></li>
+                <li class="current-page"><a href="shop.html">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
             <div class="user-navigation">
-                <a href="login.html">Войти</a>
+                <a class="login-link" href="login.html">Войти</a>
             </div>
         </nav>
 
@@ -35,7 +35,7 @@
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Магазин</a></li>
-            <li><a class="breadcrumbs-current" href=" #">Средства для ухода</a></li>
+            <li class="breadcrumbs-current"><a href=" #">Средства для ухода</a></li>
         </ul>
 
         <section class="shop-filter">
@@ -44,34 +44,38 @@
                 <form action="asds" method="get">
                     <h3>Производители:</h3>
                     <ul class="producers-list">
-                        <li class="filter-option">
-                            <input class="filter-input-checkbox" id="baxter" type="checkbox"
-                                name="Baxter_of_California">
+                        <li class="filter-option filter-checkbox">
+                            <input class="visually-hidden filter-input-checkbox filter-input" id="baxter"
+                                type="checkbox" name="Baxter_of_California">
                             <label for="baxter">Baxter of California </label>
                         </li>
-                        <li class="filter-option">
-                            <input class="filter-input-checkbox" id="mr_natty" type="checkbox" name="Mr_Natty">
+                        <li class="filter-option filter-checkbox">
+                            <input class="visually-hidden filter-input-checkbox filter-input" id="mr_natty"
+                                type="checkbox" name="Mr_Natty">
                             <label for="mr_natty">Mr Natty</label>
 
                         </li>
-                        <li class="filter-option">
-                            <input class="filter-input-checkbox" id="suavecit" type="checkbox" name="Suavecit">
+                        <li class="filter-option filter-checkbox">
+                            <input class="visually-hidden filter-input-checkbox filter-input" id="suavecit"
+                                type="checkbox" name="Suavecit">
                             <label for="suavecit">Suavecit </label>
 
                         </li>
-                        <li class="filter-option">
-                            <input class="filter-input-checkbox" id="malin_goetz" type="checkbox" name="Malin_goetz">
+                        <li class="filter-option filter-checkbox">
+                            <input class="visually-hidden filter-input-checkbox filter-input" id="malin_goetz"
+                                type="checkbox" name="Malin_goetz">
                             <label for="malin_goetz">Malin+Goetz</label>
 
                         </li>
-                        <li class="filter-option">
-                            <input class="filter-input-checkbox" id="murray’s" type="checkbox" name="Murray’s">
+                        <li class="filter-option filter-checkbox">
+                            <input class="visually-hidden filter-input-checkbox filter-input" id="murray’s"
+                                type="checkbox" name="Murray’s">
                             <label for="murray’s">Murray’s</label>
 
                         </li>
-                        <li class="filter-option">
-                            <input class="filter-input-checkbox" id="american_crew" type="checkbox"
-                                name="American_Crew">
+                        <li class="filter-option filter-checkbox">
+                            <input class="visually-hidden filter-input-checkbox filter-input" id="american_crew"
+                                type="checkbox" name="American_Crew">
                             <label for="american_crew">American Crew</label>
 
                         </li>
@@ -80,22 +84,25 @@
             <div class="group-filter">
                 <h3>Группы товаров:</h3>
                 <ul class="group-goods-list">
-                    <li class="filter-option">
-                        <input id="shaving" type="radio" name="product_group" value="shaving">
+                    <li class="filter-option filter-radio">
+                        <input class="visually-hidden filter-input-radio filter-input" id="shaving" type="radio"
+                            name="product_group" value="shaving">
                         <label for="shaving">Бритвенные <span class="shaving_thing">принадлежности</span></label>
                     </li>
-                    <li class="filter-option">
-                        <input id="washing" type="radio" name="product_group" value="washing">
+                    <li class="filter-option filter-radio">
+                        <input class="visually-hidden filter-input-radio filter-input" id="washing" type="radio"
+                            name="product_group" value="washing">
                         <label for="washing">Средства для ухода</label>
                     </li>
-                    <li class="filter-option">
-                        <input id="accessories" type="radio" name="product_group" value="accessories">
+                    <li class="filter-option filter-radio">
+                        <input class="visually-hidden filter-input-radio filter-input" id="accessories" type="radio"
+                            name="product_group" value="accessories">
                         <label for="accessories">Аксессуары</label>
                     </li>
                 </ul>
             </div>
 
-            <button class="button  button-show" type="submit">Показать</button>
+            <button class="button  button-show filter-button" type="submit">Показать</button>
             </form>
         </section>
 
@@ -103,47 +110,64 @@
             <h2 class="visually-hidden">Список средств для ухода</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
-                    <a href="travel_kit.html"><img src="img/leather.jpg" width="220" height="165"
-                            alt="набор для путешествий"></a>
-                    <h3><a href="travel_kit.html">Набор для путешествий<br> «Baxter of California»</a></h3>
+
+                    <a href="travel_kit.html">
+                        <img src="img/leather.jpg" width="220" height="165" alt="набор для путешествий">
+                        <h3>Набор для путешествий<br> «Baxter of California»</h3>
+                    </a>
                     <p class="catalog-item-price"><b>2900$</b>
                         <button class="button button-buy" type="button">Купить</button>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <a href="#"><img class="catalog-item-image" src="img/cream.jpg" width="220" height="165" alt="кондиционер"></a>
-                    <h3><a href="#">Увлажняющий кондиционер «Baxter of California»</a></h3>
+                    <a href="#">
+                        <img class="catalog-item-image" src="img/cream.jpg" width="220" height="165" alt="кондиционер">
+                        <h3>Увлажняющий кондиционер «Baxter of California»</h3>
+                    </a>
+
                     <p class="catalog-item-price"><b>750$</b>
                         <button class="button button-buy" type="button">Купить</button>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <a href="travel_kit.html"><img class="catalog-item-image" src="img/gel.jpg" width="220" height="165" alt="гель для волос"></a>
-                    <h3><a href="#">Гель для волос «SUAVECITO»</a></h3>
+                    <a href="travel_kit.html">
+                        <img class="catalog-item-image" src="img/gel.jpg" width="220" height="165" alt="гель для волос">
+                        <h3>Гель для волос <br> «SUAVECITO»</h3>
+                    </a>
+
                     <p class="catalog-item-price"><b>290$</b>
                         <button class="button button-buy" type="button">Купить</button>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <a href="travel_kit.html"><img class="catalog-item-image" src="img/clat.jpg" width="220" height="165"
-                            alt="глиня для волос"></a>
-                    <h3><a href="#">Глина для укладки волос «American crew»</a></h3>
+                    <a href="travel_kit.html">
+                        <img class="catalog-item-image" src="img/clat.jpg" width="220" height="165"
+                            alt="глиня для волос">
+                        <h3>Глина для укладки волос «American crew»</h3>
+                    </a>
+
                     <p class="catalog-item-price"><b>500$</b>
                         <button class="button button-buy" type="button">Купить</button>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <a href="travel_kit.html"><img class="catalog-item-image" src="img/gel_america.jpg" width="220" height="165"
-                            alt="гель для волос america crew"></a>
-                    <h3><a href="#">Гель для волос «AMERICAN CREW»</a></h3>
+                    <a href="travel_kit.html">
+                        <img class="catalog-item-image" src="img/gel_america.jpg" width="220" height="165"
+                            alt="гель для волос america crew">
+                        <h3>Гель для волос <br> «AMERICAN CREW»</h3>
+                    </a>
+
                     <p class="catalog-item-price"><b>300$</b>
                         <button class="button button-buy" type="button">Купить</button>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <a href="travel_kit.html"><img class="catalog-item-image" src="img/shaving.jpg" width="220" height="165"
-                            alt="набор для бритья"></a>
-                    <h3><a href="#">Набор для бритья «Baxter of California»</a></h3>
+                    <a href="travel_kit.html">
+                        <img class="catalog-item-image" src="img/shaving.jpg" width="220" height="165"
+                            alt="набор для бритья">
+                        <h3>Набор для бритья «Baxter of California»</h3>
+                    </a>
+
                     <p class="catalog-item-price"><b>3900$</b>
                         <button class="button button-buy" type="button">Купить</button>
                     </p>
@@ -189,13 +213,14 @@
                                     fill="#fff" /></svg>
                         </a>
                     </li>
-                    <a href="#" class="social-button  fb">
-                        <span class="visually-hidden">Фейсбук</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
-                            <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53
+                    <li>
+                        <a href="#" class="social-button  fb">
+                            <span class="visually-hidden">Фейсбук</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
+                                <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53
                                 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83
                                 3.83 0 0 1 1.15-2.54z" fill="#fff" /></svg>
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#" class="social-button  inst">

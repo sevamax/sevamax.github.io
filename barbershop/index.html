@@ -91,7 +91,7 @@
                         </a>
                     </figure>
                     <button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
-                    <button class="button gallery-button gallery-button-back" type="button">Вперед</button>
+                    <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
                 </div>
             </section>
         </div>
@@ -113,7 +113,7 @@
                 <h2>Записаться</h2>
                 <p class="appointment-info">Укажите желаемую дату и время и мы
                     свяжемся с вами для подтверждения брони</p>
-                <form  action="https://sa.ee.com" method="post">
+                <form class="appointment-form" action="https://sa.ee.com" method="post">
                     <p class="appointment-item">
                         <label for="appointment-date">Дата</label>
                         <input id="appointment-date" type="text" name="date" placeholder="2017-10-08" value="">
@@ -167,13 +167,14 @@
                                     fill="#fff" /></svg>
                         </a>
                     </li>
-                    <a href="#" class="social-button  fb">
-                        <span class="visually-hidden">Фейсбук</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
-                            <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53
+                    <li>
+                        <a href="#" class="social-button  fb">
+                            <span class="visually-hidden">Фейсбук</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
+                                <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53
                                 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83
                                 3.83 0 0 1 1.15-2.54z" fill="#fff" /></svg>
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#" class="social-button  inst">
