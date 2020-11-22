@@ -7,6 +7,7 @@
 [barbershop](https:///sevamax.github.io/barbershop/) - Barbershop
 
 
+
 Another projects 
 
 [Accordeon](https://sevamax.github.io/accordeon/) - accordeon example
