@@ -1,8 +1,10 @@
 # Sivachenko Max
 
-[device](https://sevamax.github.io/device/) - device 
+[device](https://sevamax.github.io/device/) - Device 
 
 [AstinDesign](https:///sevamax.github.io/AstinDesign/) - AstinDesign
+
+[barbershop](https:///sevamax.github.io/barbershop/) - Barbershop
 
 
 Another projects 
