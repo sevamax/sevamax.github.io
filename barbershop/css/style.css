@@ -290,7 +290,7 @@ img {
     left: 24px;
     width: 16px;
     height: 18px;
-    background-image: url('../img/svg/login.svg');
+    background-image: url('/img/svg/login.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
@@ -355,8 +355,8 @@ img {
     color: var(--basic-black);
     background-color: var(--basic-extra-light);
     background-image: 
-        url('../img/line.png'),
-        url("../img/pattern-light.jpg");
+        url('/img/line.png'),
+        url("/img/pattern-light.jpg");
     background-position: center, 0 0;
     background-repeat: no-repeat, repeat;
 }
@@ -614,7 +614,7 @@ img {
     left: -38px;
     width: 12px;
     height: 12px;
-    background-image: url('../img/svg/cross.svg');
+    background-image: url('/img/svg/cross.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -708,6 +708,8 @@ img {
     width: 220px;
     height: 165px;
     margin: 0;
+    object-fit: contain;
+    background-color: #f7f7f7;
 }
 
 .catalog-item-price {
@@ -909,7 +911,7 @@ img {
     text-align: center;
     font-size: 48px;
     line-height: 48px;
-    background-image: url('../img/pattern-light.jpg');
+    background-image: url('/img/pattern-light.jpg');
 
 }
 
@@ -1101,13 +1103,64 @@ img {
 /* Modal */
 
 .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     display: none;
     color: var(--basic-black);
     background-color: var(--basic-extra-light);
     background-image: url("../img/pattern-light.jpg");
     background-position: 0 0;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: var(--basic-dark);
+    transform: rotate(-45deg);
+}
+
+.modal-close::after {
+    transform: rotate(45deg);
+}
+
+.modal-map {
+    width: 766px;
+    height: 560px;
+    border: 7px solid var(--basic-white);
+}
+
+.modal-map iframe {
+    border: none; 
+}
+
+
+.modal-login {
+    top: 120px;
+    bottom: auto;
+    width: 300px;
+    padding: 50px 80px;
 }
 
 .modal-login h2 {
@@ -1129,14 +1182,18 @@ img {
 
 .login-form .login-help {
     margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .login-form input[type="email"],
 .login-form input[type="password"] {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px 40px 10px 15px;
     font: inherit;
     color: var(--basic-black);
     text-transform: uppercase;
-
     background-color: var(--basic-extra-light);
     border: 2px solid var(--basic-black);
 }
@@ -1144,6 +1201,10 @@ img {
 .login-form input:focus {
     border-color: var(--special);
     outline: inherit;
+}
+
+.login-form .button {
+    width: 100%;
 }
 
 .login-icon-user {
@@ -1165,6 +1226,33 @@ img {
     outline: inherit;
 }
 
+
+
+.login-checkbox input {
+    appearance: none;
+}
+
+.checkbox-indicator {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    vertical-align: text-bottom;;
+    border: 2px solid #000101;
+}
+
+.checkbox-indicator:hover,
+.checkbox-indicator:focus {
+    border-color: var(--special);
+    outline: inherit;
+}
+
+.login-checkbox input:checked + span {
+    background-image: url(/img/svg/cross.svg);
+    background-position: 47% 56%;
+    background-repeat: no-repeat;
+}
 /* Restore */
 
 .restore {
@@ -1176,36 +1264,3 @@ img {
 .restore:focus {
     text-decoration: none;
 }
-/* 
-
-.current-page {
-    border-bottom: 4px solid #ffffff;
-}
-
-
-
-.title {
-    font-size: 48px;
-    line-height: 48px;
-}
-
-.best h2,
-.prices h2,
-.about-us h2 {
-    font-size: 24px;
-    line-height: 30px;
-}
-
-.prices-table {
-    border-collapse: collapse;
-}
-
-.prices-table td {
-    padding: 13px 15px;
-    padding-right: 0;
-    width: 230px;
-
-
-    border: 2px solid #000000;
-}
-
