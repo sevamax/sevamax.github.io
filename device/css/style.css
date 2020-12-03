@@ -581,14 +581,16 @@ h2.catalog-title,
 .btn-info-more:hover,
 .btn-info-about:hover,
 .btn-info-write:hover,
-.btn-info-show:hover {
+.btn-info-show:hover,
+.btn-info-submit:hover {
     transform: scaleY(4.5);
 }
 
 .btn-info-more:focus,
 .btn-info-about:focus,
 .btn-info-write:focus,
-.btn-info-show:focus {
+.btn-info-show:focus,
+.btn-info-submit:focus {
     transform: scaleY(4.5);
     outline: none;
 
@@ -602,25 +604,25 @@ h2.catalog-title,
 .btn-info-more:hover::before,
 .btn-info-about:hover::before,
 .btn-info-write:hover::before,
-.btn-info-show:hover::before {
+.btn-info-show:hover::before,
+.btn-info-submit:hover::before {
     transform: scaleY(0.23) scaleX(1);
-    ;
 }
 
 .btn-info-more:focus::before,
 .btn-info-about:focus::before,
 .btn-info-write:focus::before,
-.btn-info-show:focus::before {
+.btn-info-show:focus::before,
+.btn-info-submit:focus::before {
     transform: scaleY(0.23) scaleX(1);
-    ;
 }
 
 .btn-info-more:active::before,
 .btn-info-about:active::before,
 .btn-info-write:active::before,
-.btn-info-show:active::before {
+.btn-info-show:active::before,
+.btn-info-submit:active::before {
     transform: scaleY(0.23) scaleX(1);
-    ;
     opacity: 0.5;
 }
 
@@ -978,6 +980,9 @@ h2.catalog-title,
     width: 80px;
     border-top: 7px solid #000;
 
+}
+.contacts img {
+    cursor: pointer;
 }
 
 .list-transport {
@@ -1842,4 +1847,154 @@ h2.catalog-title,
 
 .breadcrumbs__list a:active {
     opacity: 0.3;
+}
+
+
+/* modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    margin: auto;
+    display: none;
+}
+
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    display: block;
+    animation: shake 0.6s;
+}
+
+
+.modal-map {
+    top: auto;
+    bottom: 190px;
+    width: 960px;
+    height: 560px;
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.4);
+}
+
+.modal-map iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal-write {
+    box-sizing: border-box;
+    /* display: block; */
+    width: 960px;
+    height: 560px;
+    padding: 90px 100px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(4, 6, 6, 0.4);
+}
+
+.modal-write form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.modal-write label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Gilroy Extra Bold';
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.modal-write input {
+    width: calc(100% - 6px);
+    padding: 15px 0;
+    padding-left: 20px;
+    border: 3px solid #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+.modal-write textarea {
+    width: 100%;    
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 170px;
+    max-width: 770px;
+    padding: 18px;
+    padding-right: 0;
+    border: 3px solid #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+.modal-write input:hover,
+.modal-write textarea:hover {
+    border-color:  #eaeaea;
+    background-color: #eaeaea;
+}
+
+.modal-write input:focus,
+.modal-write textarea:focus {
+    border-color: #f7e296 ;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.modal-write input:invalid {
+
+    border-color:#f6dada;
+    background-color: #f6dada;
+}
+
+
+.modal-write p {
+    margin: 0;
+}
+
+.modal-write p:nth-child(3) {
+    grid-column: 1/3;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-image: url('/img/svg/modal-close.svg');
+    border: none;
+    opacity: 0.6;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 1;
+    outline: none;
+}
+
+.modal-close:active {
+    opacity: 0.4;
+}
+
+/* Keyframes */
+
+@keyframes bounce {
+    0%   {transform: translateY(-2000px);  }
+    70%  {transform: translateY(100px);   }
+    9%   {transform: translateY(-300px);   }
+    100% {transform: translateY(0px);      }
+}
+
+@keyframes shake {
+    0%, 100%                { transform: translateX(0px);   }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { transform: translateX(10px); }
 }
