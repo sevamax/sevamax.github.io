@@ -1260,7 +1260,7 @@ img {
 }
 
 .login-checkbox input:checked + span {
-    background-image: url(/img/svg/cross.svg);
+    background-image: url('../img/svg/cross.svg');
     background-position: 47% 56%;
     background-repeat: no-repeat;
 }
