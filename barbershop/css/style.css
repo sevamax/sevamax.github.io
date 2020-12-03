@@ -614,7 +614,7 @@ img {
     left: -38px;
     width: 12px;
     height: 12px;
-    background-image: url('/img/svg/cross.svg');
+    background-image: url('../img/svg/cross.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
