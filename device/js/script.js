@@ -130,3 +130,90 @@ searchInput.addEventListener("keyup", function(event) {
   }
 });
 
+
+/* Modal */
+
+let button_modalWrite = document.querySelector('.contacts button');
+let modalWrite = document.querySelector('.modal-write');
+
+let modalWrite_form = modalWrite.querySelector('form');
+let modalWrite_name = modalWrite_form.querySelector('[name=user-name]');
+let modalWrite_mail = modalWrite_form.querySelector('[name=user-email]');
+let modalWrite_text = modalWrite_form.querySelector('[name=user-text]');
+let modalWrite_submit = modalWrite_form.querySelector('button');
+
+let buttons_modalClose = document.querySelectorAll('.modal-close');
+let button_modalMap = document.querySelector('.contacts img');
+let modalMap = document.querySelector('.modal-map');
+
+let storage_name = "";
+let isStorageWorks = true;
+
+try {
+  storage_name = localStorage.getItem('name');
+} catch(err) {
+  isStorageWorks = false;
+}
+
+/* Modal write us */
+button_modalWrite.addEventListener('click', e => {
+  modalWrite.classList.toggle('modal-show');
+  if (storage_name && isStorageWorks) {
+    modalWrite_name.value = storage_name;
+    modalWrite_mail.focus();
+  } else {
+    modalWrite_name.focus();
+  }
+});
+
+/* Form processing */
+
+modalWrite_submit.addEventListener('click', e => {
+  e.preventDefault();
+  if (!modalWrite_name.value || !modalWrite_mail.value) {
+    console.log('Put all your data');
+    modalWrite.classList.remove('modal-error');
+    modalMap.offsetWidth = modalMap.offsetWidth;
+    modalWrite.classList.add('modal-error');
+  } else {
+    localStorage.setItem('name', modalWrite_name.value);
+    console.log(`${modalWrite_name.value}`);
+    location.reload();
+  }
+});
+
+
+
+/* modal close escape */
+
+for(let button_modalClose of buttons_modalClose) {
+
+  if(!button_modalClose.classList.contains('modal-close-map')) {
+    button_modalClose.addEventListener('click', e => {
+      modalWrite.classList.toggle('modal-show');
+      modalWrite.classList.remove('modal-error');
+    });
+  } else {
+    button_modalClose.addEventListener('click', e => {
+    modalMap.classList.toggle('modal-show');
+
+    });
+  }
+}
+
+
+window.addEventListener('keydown', e => {
+  if (e.key == 'Escape') {
+    e.preventDefault();
+    modalWrite.classList.remove('modal-show');
+    modalWrite.classList.remove('modal-error');
+    modalMap.classList.remove('modal-show');
+  }
+});
+
+
+/* Modal map */
+button_modalMap.addEventListener('click', e => {
+  modalMap.classList.toggle('modal-show');
+});
+
