@@ -1969,7 +1969,7 @@ h2.catalog-title,
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    background-image: url('/img/svg/modal-close.svg');
+    background-image: url('../img/svg/modal-close.svg');
     border: none;
     opacity: 0.6;
 }
