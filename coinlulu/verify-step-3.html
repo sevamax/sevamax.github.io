@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Coinolulu - Verify account Step 3</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body page__minor page__pop">
+
+  <div class="verify__wrapper">
+
+    <header class="sign__header container">
+      <a href="index.html" class="page-header__logo main-page__logo">
+        <img src="img/logotype-mobile.svg" alt="Coinolulu">
+      </a>
+    </header>
+
+    <main class="sign__content verify__wrapper container">
+
+      <div class="verify__wrapper-header">
+        <div class="sign__title">Welcome Username <span class="desktop-def">-</span> Let's get started</div>
+        <p class="verify__subtitle">Complete the following steps to verify your account.</p>
+        <div class="verify__progress ">
+          <div class="verify__progress-item verify__progress-item--done ">
+            <div class="progress-img progress-img--email "></div>
+            <div class="progress-title">Email</div>
+          </div>
+          <div class="verify__progress-item verify__progress-item--done">
+            <div class="progress-img progress-img--phone"></div>
+            <div class="progress-title">Phone</div>
+          </div>
+          <div class="verify__progress-item verify__progress-item--progress">
+            <div class="progress-img progress-img--id"></div>
+            <div class="progress-title">ID</div>
+          </div>
+        </div>
+      </div>
+
+      <form action="#" class="sign__form verification__form passport__form">
+        <div class="sign__title">Proof Of Identity</div>
+        <h3 class="step-3__title">Choose your ID type</h3>
+        <div class="radios__wrapper">
+          <input class="visually-hidden" type="radio" id="id-type-passport" name="id-type" value="passport" checked>
+          <label for="id-type-passport" class="radio__label">Passport</label>
+
+          <input class="visually-hidden" type="radio" id="id-type-card" name="id-type" value="id">
+          <label for="id-type-card" class="radio__label">ID card</label>
+        </div>
+        <div class="verification__instruction instruction">
+          <div class="passport">
+            <h4 class="instruction__title">Take a photo Of your driver's license. The photo should be:</h4>
+            <ul class="instruction__list">
+              <li class="instruction__item">bright and clear (good quality),</li>
+              <li class="instruction__item">uncut (all corners of the document should be visible).</li>
+            </ul>
+            <div class="instruction__photos photos-wrapper">
+
+              <div class="photos__item photos__item--1 photos__item--correct">
+                <div class="photos__content"></div>
+              </div>
+              <div class="photos__item photos__item--2 photos__item--incorrect">
+                <div class="photos__content"></div>
+              </div>
+              <div class="photos__item photos__item--3 photos__item--incorrect">
+                <div class="photos__content"></div>
+              </div>
+            </div>
+            <div class="instruction__upload">
+              <input class="visually-hidden" type="file" id="front-passport-photo" name="photo">
+              <label id="front-passport-label" for="front-passport-photo" class="secondary-btn instruction__button">
+                <div class="upload-photo"></div>
+                Upload the <span>front</span> of your document <span class="desktop__attention">*</span>
+                <small class="upload__note">Image up to 10MB</small>
+                <div class="visually-hidden" id="file-name"></div>
+              </label>
+              <div class="visually-hidden" id="front-photo-passport-wrapper">
+                <span id="front-passport-name">File name</span>
+                <span class="delete-file">Delete</span>
+              </div>
+
+              <input class="visually-hidden" type="file" id="back-passport-phot" name="photo">
+              <label id="back-passport-label" for="back-passport-phot"
+                class="secondary-btn instruction__button file-uploaded">
+                <div class="upload-photo"></div>
+                <div class="upload-text">
+                  Upload the <span>back</span> of your document <span class="desktop__attention">*</span>
+                </div>
+                <small class="upload__note">Image up to 10MB</small>
+              </label>
+              <div class="visually-hidden" id="back-photo-passport-wrapper">
+                <span id="back-passport-name">File name</span>
+                <span class="delete-file">Delete</span>
+              </div>
+            </div>
+          </div>
+          <div class="id visually-hidden">
+            <h4 class="instruction__title">Take a photo Of your driver's license. The photo should be:</h4>
+            <ul class="instruction__list">
+              <li class="instruction__item">bright and clear (good quality),</li>
+              <li class="instruction__item">uncut (all corners of the document should be visible).</li>
+            </ul>
+            <div class="instruction__photos photos-wrapper">
+
+              <div class="photos__item photos__item--1 photos__item--correct photos__item--id">
+                <div class="photos__content"></div>
+              </div>
+              <div class="photos__item photos__item--2 photos__item--incorrect photos__item--id">
+                <div class="photos__content"></div>
+              </div>
+              <div class="photos__item photos__item--3 photos__item--incorrect photos__item--id">
+                <div class="photos__content"></div>
+              </div>
+            </div>
+            <div class="instruction__upload">
+              <input class="visually-hidden" type="file" id="front-id-photo" name="photo">
+              <label id="front-id-label" for="front-id-photo" class="secondary-btn instruction__button">
+                <div class="upload-photo"></div>
+                Upload the <span>front</span> of your document <span class="desktop__attention">*</span>
+                <small class="upload__note">Image up to 10MB</small>
+                <div class="visually-hidden" id="file-name"></div>
+              </label>
+              <div class="visually-hidden" id="front-photo-id-wrapper">
+                <span id="front-id-name">File name</span>
+                <span class="delete-file">Delete</span>
+              </div>
+
+              <input class="visually-hidden" type="file" id="back-id-phot" name="photo">
+              <label id="back-id-label" for="back-id-phot"
+                class="secondary-btn instruction__button file-uploaded">
+                <div class="upload-photo"></div>
+                <div class="upload-text">
+                  Upload the <span>back</span> of your document <span class="desktop__attention">*</span>
+                </div>
+                <small class="upload__note">Image up to 10MB</small>
+              </label>
+              <div class="visually-hidden" id="back-photo-id-wrapper">
+                <span id="back-pasidsport-name">File name</span>
+                <span class="delete-file">Delete</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="primary-btn sign__button verification__button" type="submit">Next</button>
+      </form>
+
+    </main>
+
+    <footer class="sign__footer">
+      <div class="sign__footer-copyright">
+        <div class="sign__footer-wrapper container">
+          <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

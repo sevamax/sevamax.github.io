@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Coinolulu - Sign-up</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body page__minor page__pop">
+
+  <div class="sign__wrapper">
+
+    <header class="sign__header container">
+      <a href="index.html" class="page-header__logo main-page__logo">
+        <img src="img/logotype-mobile.svg" alt="Coinolulu">
+      </a>
+    </header>
+
+    <main class="sign__content container">
+      <div class="sign__title">Sign in</div>
+      <form action="#" class="sign__form">
+        <label for="sign-name" class="sign__name sign__label">First name</label>
+        <input id="sign-name" class="sign__input input" type="text" placeholder="Enter your first name...">
+
+        <label for="sign-surname" class="sign__surname sign__label">Last name</label>
+        <input id="sign-surname" class="sign__input input" type="text" placeholder="Enter your last name...">
+
+        <label for="sign-country" class="sign__country sign__label">Country of residence</label>
+        <input id="sign-country" class="sign__input input" type="text" placeholder="Select country">
+
+        <label for="sign-birth" class="sign_birth sign__label">Date of birth</label>
+        <input id="sign-birth" class="sign__input  sign__input--birth input" type="text" placeholder="MM  /  DD  /  YY">
+
+        <label for="sign-password" class="sign__password sign__label">Password</label>
+        <input id="sign-password" class="sign__input sign__input--pass input" type="password"
+          placeholder="Create password">
+
+
+        <div class="requirements">
+          <p class="requirements__item">At least 8 symbols</p>
+          <p class="requirements__item requirements__item--false">Mast have capital letter</p>
+          <p class="requirements__item requirements__item--true">At least one digit</p>
+        </div>
+
+        <input id="accept" class="sign__checkox input visually-hidden" type="checkbox">
+        
+        <label for="accept" class="sign__accept sign__label">I accept <a href="#" class="text-btn">Privacy policy</a>,
+          the <a href="#" class="text-btn">Terms of use</a>, <a href="#" class="text-btn">Payment Account Terms</a>, <a
+            href="#" class="text-btn">Refund policy</a> and the processing
+          of my personal data in accordance with the <a href="#" class="text-btn">Terms of use</a>, I confirm that I am
+          not a <a href="#" class="text-btn">PEP</a>.</label>
+
+        <button class="primary-btn sign__button" id="create-btn" type="submit">Create account</button>
+      </form>
+    </main>
+
+    <footer class="sign__footer sign__footer--up">
+      <div class="sign__footer-account container">
+        <p class="sign-up">Already have an account? <a href="sign-in.html" class="text-btn"> Sign in</a></p>
+      </div>
+      <div class="sign__footer-copyright">
+        <div class="sign__footer-wrapper container">
+          <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
