@@ -4,60 +4,64 @@ let header = document.querySelector('.page-header');
 let isMenuOpen = false;
 let menuCloseBtn = document.querySelector('.main-nav__close');
 
-navMenuToggle.addEventListener('click', e => {
+if (navMenuToggle) {
+  navMenuToggle.addEventListener('click', e => {
 
-  console.log(isMenuOpen);
-  if (innerWidth < 1068) {
-    if (!isMenuOpen) {
-      isMenuOpen = !isMenuOpen;
-      document.body.classList.add('menu-open');
-      document.body.style.backgroundColor = "#e0e0e0";
-      header.style.backgroundColor = "#e0e0e0";
-      navMenu.style.transform = "translateX(0%)";
-    } else {
-      isMenuOpen = !isMenuOpen;
-      document.body.classList.remove('menu-open');
-      document.body.style.backgroundColor = null;
-      header.style.backgroundColor = null;
-      navMenu.style.transform = null;
+    console.log(isMenuOpen);
+    if (innerWidth < 1068) {
+      if (!isMenuOpen) {
+        isMenuOpen = !isMenuOpen;
+        document.body.classList.add('menu-open');
+        document.body.style.backgroundColor = "#e0e0e0";
+        header.style.backgroundColor = "#e0e0e0";
+        navMenu.style.transform = "translateX(0%)";
+      } else {
+        isMenuOpen = !isMenuOpen;
+        document.body.classList.remove('menu-open');
+        document.body.style.backgroundColor = null;
+        header.style.backgroundColor = null;
+        navMenu.style.transform = null;
+      }
     }
-  }
-});
-menuCloseBtn.addEventListener('click', e => {
-  if (innerWidth < 1068) {
-    if (!isMenuOpen) {
-      isMenuOpen = !isMenuOpen;
-      document.body.classList.add('menu-open');
-      document.body.style.backgroundColor = "#e0e0e0";
-      header.style.backgroundColor = "#e0e0e0";
-      navMenu.style.transform = "translateX(0%)";
-    } else {
-      isMenuOpen = !isMenuOpen;
-      document.body.classList.remove('menu-open');
-      document.body.style.backgroundColor = null;
-      header.style.backgroundColor = null;
-      navMenu.style.transform = null;
+  });
+  menuCloseBtn.addEventListener('click', e => {
+    if (innerWidth < 1068) {
+      if (!isMenuOpen) {
+        isMenuOpen = !isMenuOpen;
+        document.body.classList.add('menu-open');
+        document.body.style.backgroundColor = "#e0e0e0";
+        header.style.backgroundColor = "#e0e0e0";
+        navMenu.style.transform = "translateX(0%)";
+      } else {
+        isMenuOpen = !isMenuOpen;
+        document.body.classList.remove('menu-open');
+        document.body.style.backgroundColor = null;
+        header.style.backgroundColor = null;
+        navMenu.style.transform = null;
+      }
     }
-  }
-});
+  });
+}
 
 
-window.addEventListener('scroll', function () {
-  if (!header.classList.contains('page-header--minor')) {
-    var html = document.documentElement;
-    var body = document.body;
 
-    var scrollTop = html.scrollTop || body && body.scrollTop || 0;
-    scrollTop -= html.clientTop;
-    if (scrollTop > 0) {
-      header.classList.add('page-header--add');
-    } else {
-      header.classList.remove('page-header--add');
+if (header) {
+  window.addEventListener('scroll', function () {
+    if (!header.classList.contains('page-header--minor')) {
+      var html = document.documentElement;
+      var body = document.body;
+
+      var scrollTop = html.scrollTop || body && body.scrollTop || 0;
+      scrollTop -= html.clientTop;
+      if (scrollTop > 0) {
+        header.classList.add('page-header--add');
+      } else {
+        header.classList.remove('page-header--add');
+      }
+      // console.log(scrollTop);
     }
-    // console.log(scrollTop);
-  }
-});
-
+  });
+}
 
 
 /* show all currencies */
@@ -180,3 +184,54 @@ if (showAllCryptoBtn) {
   });
 
 }
+
+let frontPassportPhotoWrapper = document.getElementById('front-photo-passport-wrapper');
+let BackPassportPhotoWrapper = document.getElementById('back-photo-passport-wrapper');
+
+// let frontPassportPhotoName = document.getElementById('front-passport-name');
+// let backPassportPhotoName = document.getElementById('back-passport-name');
+
+// let passportFrontLabel = document.getElementById('front-passport-label');
+// let passportBackLabel = document.getElementById('back-passport-label');
+
+// let passportFrontInput = document.getElementById('front-passport-photo');
+// let passportBackInput = document.getElementById('back-passport-photo');
+
+// function getFileName () {
+
+//   var file = document.getElementById('front-passport-photo').value;
+//   file = file.replace (/\\/g, "/").split ('/').pop ();
+
+//   console.log(file);
+
+//   frontPassportPhotoWrapper.classList.remove('visually-hidden');
+//   // passportFrontLabel.classList.add('visually-hidden');
+
+//   frontPassportPhotoName.innerHTML = file;
+
+//   passportFrontLabel.innerHTML = frontPassportPhotoWrapper;
+
+//   }
+
+let passportWrapper = document.querySelector('.passport');
+let IdWrapper = document.querySelector('.id');
+
+let idtypePassport = document.querySelector('input[value="passport"]');
+let idtypeId = document.querySelector('input[value="id"]');
+
+let idTypeValue = document.querySelector('input[name="id-type"]:checked').value;
+
+
+document.addEventListener('change', e => {
+
+  if (idTypeValue == 'passport') {
+    passportWrapper.classList.toggle('visually-hidden');
+    IdWrapper.classList.toggle('visually-hidden');
+  } else {
+    passportWrapper.classList.toggle('visually-hidden');
+    IdWrapper.classList.toggle('visually-hidden');
+  }
+
+  console.log(idTypeValue);
+});
+
