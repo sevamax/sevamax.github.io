@@ -12,7 +12,7 @@
 
 <body class="page__body page__minor page__pop">
 
-  <div class="verify__wrapper">
+  <div class="verify__wrapper sign__wrapper">
 
     <header class="sign__header container">
       <a href="index.html" class="page-header__logo main-page__logo">
@@ -44,10 +44,28 @@
       <form action="#" class="sign__form verification__form">
         <div class="sign__title">Phone number confirmation</div>
         <label for="sign-phone-country" class="sign__phone-country sign__label">Phone country</label>
-        <input id="sign-phone-country" class="verify__input sign__input input" type="text" placeholder="Select country">
+        <div class="select-wrapper" style="max-width: 332px; text-align: left;box-sizing:border-box; height: 36px">
+          <div class="select select--country" style=" height:100%">
+            <div class="select__active" style="box-sizing:border-box;height: 36px">
+              <span class="select__acitive-text">Select country</span>
+              <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.91414 0.62639C10.3047 1.01691 10.3047 1.65008 9.91414 2.0406L5.20703 6.74771L0.499924 2.0406C0.1094 1.65008 0.1094 1.01691 0.499924 0.626389C0.890449 0.235865 1.52361 0.235865 1.91414 0.626389L5.20703 3.91928L8.49992 0.62639C8.89045 0.235865 9.52361 0.235865 9.91414 0.62639Z"
+                  fill="#959CA5" />
+              </svg>
+            </div>
+            <div class="select-list d-none">
+              <div class="select-list__item" data-country="USA" data-country-number="+1">USA (+1)</div>
+              <div class="select-list__item" data-country="Germany" data-country-number="+49">Germany (+49)</div>
+              <div class="select-list__item" data-country="Ukraine" data-country-number="+380">Ukraine (+380)</div>
+              <div class="select-list__item" data-country="Russia" data-country-number="+7">Russia (+7)</div>
+              <div class="select-list__item" data-country="China" data-country-number="+86">China (+86)</div>
+            </div>
+          </div>
+        </div>
 
-        <label for="sign-number" class="sign__number sign__label">Password</label>
-        <input id="sign-number" class="verify__input sign__input input" type="text" placeholder="+380" val="+380">
+        <label for="sign-number" class="sign__number sign__label">Phone number </label>
+        <input id="sign-number" class="verify__input sign__input input" type="text" value="+380"  style="box-sizing:border-box;height: 36px">
 
         <button class="primary-btn sign__button" type="submit">Continue</button>
       </form>
