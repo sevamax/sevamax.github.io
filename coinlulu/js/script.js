@@ -384,6 +384,7 @@ if (programRef) {
         document.querySelector('main').classList.add('container');
         document.querySelector('.setting__title').classList.remove('container');
         document.querySelector('.program__wrapper').classList.remove('container');
+        document.querySelector('.program__wrapper').style.width = null;
       }
     }
   });
@@ -399,6 +400,7 @@ if (programRef) {
       document.querySelector('main').classList.remove('container');
       document.querySelector('.setting__title').classList.add('container');
       document.querySelector('.program__wrapper').classList.add('container');
+      document.querySelector('.program__wrapper').style.width = "308px";
       document.querySelector('.partner-program .program__title').classList.add('container');
       document.querySelector('.user-data').classList.add('container');
       document.querySelector('.partner-program__content .program__title').classList.add('container');
@@ -414,9 +416,6 @@ if (programRef) {
 
   });
 }
-
-
-
 
 
 let settingWrapper = document.querySelector('.settings__wrapper.program__wrapper');
@@ -438,9 +437,6 @@ if (settingWrapper) {
       settingsProfile.classList.remove('d-none');
       settingsDocument.classList.add('d-none');
       settingsSecurity.classList.add('d-none');
-      // if(document.body.clientWidth <= 650) {
-      //   programWrapper.classList.remove('program__wrapper--par');
-      // }
     }
   });
   programDoc.addEventListener('click', e => {
@@ -453,11 +449,6 @@ if (settingWrapper) {
       settingsProfile.classList.add('d-none');
       settingsSecurity.classList.add('d-none');
 
-      // referral.classList.toggle('d-none');
-      // partner.classList.toggle('d-none');
-      // if(document.body.clientWidth <= 650) {
-      //   programWrapper.classList.remove('program__wrapper--par');
-      // }
     }
   });
   programSec.addEventListener('click', e => {
@@ -470,11 +461,6 @@ if (settingWrapper) {
       settingsDocument.classList.add('d-none');
       settingsProfile.classList.add('d-none');
 
-      // referral.classList.toggle('d-none');
-      // partner.classList.toggle('d-none');
-      // if(document.body.clientWidth <= 650) {
-      //   programWrapper.classList.remove('program__wrapper--par');
-      // }
     }
   });
 }
@@ -573,15 +559,15 @@ if (changePasswordMob) {
     <div class="change__content" style="margin: 0 auto;margin-top: 16px;    width: 272px;">
 
       <label for="current-password" style="font: inherit; display: block;color: #959ca5; font-weight: 600;margin-bottom: 4px;">Current password</label>
-      <div class="input__wrapper" style="margin-bottom: 36px;border: 1px solid #E2E8ED;box-sizing: border-box; border-radius: 8px;display: flex;justify-content: space-between;padding: 8px 16px;align-items: center;">
-        <input id="current-password" type="password" class="input" style="border: none;font: inherit;padding: 0;" placeholder="Enter current password">
-        <button class="show-password show-password--current" type="button" style="border: none; padding: 0; width: 16px; height: 16px; background: transparent url('../img/show-password.svg') center center no-repeat;"></button>
+      <div class="input__wrapper" style="margin-bottom: 36px;border: 1px solid #E2E8ED;box-sizing: border-box; border-radius: 8px;display: flex;justify-content: space-between;align-items: center;">
+        <input id="current-password" type="password" class="input" style="border: none;font: inherit;padding: 8px 16px; width: 100%;" placeholder="Enter current password">
+        <button class="show-password show-password--current" type="button" style="border: none; padding: 0;margin-right: 16px; width: 16px; height: 16px; background: transparent url('../img/show-password.svg') center center no-repeat;"></button>
       </div>
 
       <label for="new-password" style="font: inherit; display: block;color: #959ca5; font-weight: 600;margin-bottom: 4px;">New password</label>
-      <div class="input__wrapper" style="border: 1px solid #E2E8ED;box-sizing: border-box; border-radius: 8px;display: flex;justify-content: space-between;padding: 8px 16px;align-items: center;">
-        <input id="new-password" type="password" class="input" style="border: none;font: inherit;padding: 0;" placeholder="Create password">
-        <button class="show-password show-password--new" type="button" style="border: none; padding: 0; width: 16px; height: 16px; background: transparent url('../img/show-password.svg') center center no-repeat;"></button>
+      <div class="input__wrapper" style="border: 1px solid #E2E8ED;box-sizing: border-box; border-radius: 8px;display: flex;justify-content: space-between;align-items: center;">
+        <input id="new-password" type="password" class="input" style="border: none;font: inherit;padding: 8px 16px; width: 100%;" placeholder="Create password">
+        <button class="show-password show-password--new" type="button" style="border: none; padding: 0;margin-right: 16px; width: 16px; height: 16px; background: transparent url('../img/show-password.svg') center center no-repeat;"></button>
       </div>
 
       <button class="primary-btn" type="button" style="width: 100%;margin-top: 50px;">Change password</button>
@@ -685,4 +671,44 @@ if (paginationBtn) {
       paginationBtn.textContent = paginationListItem.textContent;
     })
   });
+}
+
+/* transfer slider index */
+
+let indexSlider = document.querySelector('.exchange__info');
+let copySlider;
+if (indexSlider) {
+  copySlider = indexSlider.cloneNode(true);
+
+function indexMobile() {
+  if(document.body.clientWidth <= 1068) {
+    indexSlider.classList.add('d-none');
+    document.querySelector('.page-main__trust-us').insertAdjacentElement('afterbegin', copySlider);
+    copySlider.style.marginTop = "16px";
+    copySlider.style.marginLeft = "5%";
+    document.querySelector('.exchange__wrapper').classList.remove('container');
+    document.querySelector('.exchange__wrapper-text').classList.add('container');
+    document.querySelector('.cryptocurrency-exchange + .exchange__subtitle').classList.add('container');
+    document.querySelector('.cryptocurrency-exchange + .exchange__subtitle').style.margin = "0 auto";
+    document.querySelector('.cryptocurrency-exchange + .exchange__subtitle').style.marginTop = "16px";
+    document.querySelector('.cryptocurrency-exchange').style.width = "100%";
+    document.querySelector('.cryptocurrency-exchange').style.maxWidth = "420px";
+  }
+}
+  indexMobile();
+  window.addEventListener('resize', e => {
+    indexMobile();
+    if (document.body.clientWidth >= 1068) {
+      indexSlider.classList.remove('d-none');
+      copySlider.remove();
+      document.querySelector('.exchange__wrapper').classList.add('container');
+      document.querySelector('.exchange__wrapper-text').classList.remove('container');
+      document.querySelector('.cryptocurrency-exchange + .exchange__subtitle').classList.remove('container');
+      document.querySelector('.cryptocurrency-exchange + .exchange__subtitle').style.margin = null;
+      document.querySelector('.cryptocurrency-exchange + .exchange__subtitle').style.marginTop = null;
+      document.querySelector('.cryptocurrency-exchange').style.width = null;
+      document.querySelector('.cryptocurrency-exchange').style.maxWidth = null;
+    }
+  });
+
 }
