@@ -95,6 +95,12 @@ th::first-letter {
   // }
 }
 
+.show-password {
+  &:focus {
+    outline: none;
+    cursor: pointer;
+  }
+}
 
 
 .container {
@@ -270,22 +276,28 @@ th::first-letter {
 
 .slider__line {
   display: flex;
-  column-gap: 16px;
+  // column-gap: 16px;
   align-items: center;
   overflow: hidden;
   filter: drop-shadow(0px 3px 18px rgba(15, 28, 75, 0.13));
+  //  box-shadow: 0 11px 18px rgba(15, 28, 75, 0.13);
 }
 
 .info-card {
   width: 160px;
+  min-width: 160px;
   height: 160px;
   padding: 16px;
   background-color: #ffffff;
   border-radius: 16px;
   box-sizing: border-box;
 
+  &+& {
+    margin-left: 16px;
+  }
 
-
+  // box-shadow: 0 11px 18px rgba(15, 28, 75, 0.13);
+  // filter: drop-shadow(0px 3px 18px rgba(15, 28, 75, 0.13));
 }
 
 .info-card__name {
@@ -348,6 +360,14 @@ th::first-letter {
   &--next {
     transform: rotate(-90deg);
   }
+
+  &:hover {
+    background-color: #f7f8fa;
+  }
+
+  &:active {
+    background-color: #e2e8ed;
+  }
 }
 
 
@@ -373,8 +393,12 @@ th::first-letter {
 
 .currency-select {
   display: flex;
-  column-gap: 12px;
+  // column-gap: 12px;
   align-items: center;
+
+  input {
+    margin-right: 12px;
+  }
 }
 
 .currency-select img {
@@ -442,6 +466,9 @@ th::first-letter {
   background-color: #e2e8ed;
   border-radius: 44px;
   border: 0;
+  font: inherit;
+  color: $greyText;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -457,7 +484,7 @@ th::first-letter {
   }
 
   &:hover {
-    cursor: pointer;
+    background-color: #dfdfdf;
   }
 }
 
@@ -492,6 +519,7 @@ th::first-letter {
   border: 1px solid #e2e8ed;
   border-radius: 8px;
   cursor: pointer;
+
   img {
     margin-right: 8px;
   }
@@ -503,7 +531,7 @@ th::first-letter {
   .currency-list {
     top: 49px;
     left: 0;
-}
+  }
 }
 
 
@@ -543,17 +571,22 @@ th::first-letter {
   z-index: 10;
   box-shadow: 0px 11px 18px rgba(15, 28, 75, 0.13);
 }
+
 .currency-list__item {
   padding: 10px;
+
   &:hover {
     background-color: #f7f8fa;
   }
+
   &:active {
     background-color: #e2e8ed;
   }
+
   &:first-child {
     border-radius: 8px 8px 0 0;
   }
+
   &:last-child {
     border-radius: 0 0 8px 8px;
   }
@@ -653,6 +686,7 @@ th::first-letter {
   background: #ffffff;
   color: $greyText;
   font: inherit;
+
   &:hover {
     background-color: #f7f8fa;
   }
@@ -840,7 +874,11 @@ th::first-letter {
 .reviews__item {
   display: flex;
   flex-direction: column;
-  row-gap: 24px
+
+  // row-gap: 24px
+  &+& {
+    margin-top: 32px;
+  }
 }
 
 .reviews__text {
@@ -851,6 +889,7 @@ th::first-letter {
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
+  margin-bottom: 24px;
 
   &::after {
     content: '';
@@ -885,6 +924,10 @@ th::first-letter {
   color: #6d89ff;
 }
 
+.review-author__avatar {
+  margin-right: 8px;
+}
+
 
 /* currencies */
 
@@ -895,6 +938,8 @@ th::first-letter {
 .currencies__main,
 .currencies__additional {
   display: inline;
+  margin-bottom: -16px;
+  margin-top: -16px;
 }
 
 .currencies__title {
@@ -905,6 +950,9 @@ th::first-letter {
   background-color: #e2e8ed;
   border-radius: 16px;
   cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
 }
 
 .currencies__list {
@@ -913,9 +961,9 @@ th::first-letter {
 
 .currencies__main {
   display: flex;
-  row-gap: 16px;
+  // row-gap: 16px;
   flex-wrap: wrap;
-  column-gap: 12px;
+  // column-gap: 12px;
 }
 
 
@@ -1034,14 +1082,17 @@ th::first-letter {
 .language {
   font-weight: 600;
 }
+
 .language {
   position: relative;
   order: 2;
   cursor: pointer;
 }
+
 .language__item {
   position: relative;
   padding-right: 18px;
+
   &::after {
     content: '';
     position: absolute;
@@ -1053,6 +1104,7 @@ th::first-letter {
     transform: rotate(180deg);
   }
 }
+
 .language-list {
   position: absolute;
   top: -129%;
@@ -1060,6 +1112,7 @@ th::first-letter {
   background-color: #ffffff;
   padding: 2px 0;
   left: -5px;
+
   p {
     padding: 0 5px;
   }
@@ -1131,10 +1184,10 @@ th::first-letter {
 .article-list__content {
 
   .slider__line {
-    filter: drop-shadow(0px 11px 18px rgba(15, 28, 75, 0.13));
+    filter: drop-shadow(0px 11px 18px rgba(15, 28, 75, 0.05));
     width: 900px;
     overflow: hidden;
-    // margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -1143,6 +1196,11 @@ th::first-letter {
   border-radius: 16px;
   overflow: hidden;
   width: 240px;
+  min-width: 240px;
+
+  &+& {
+    margin-left: 16px;
+  }
 }
 
 .article-card__content {
@@ -1195,7 +1253,8 @@ th::first-letter {
   display: flex;
   margin: auto;
   justify-content: center;
-  margin-top: 24px;
+  // margin-top: 24px;
+  margin-top: 0;
 }
 
 .article-list__hashtag {
@@ -1735,12 +1794,14 @@ th::first-letter {
     background-image: url('../img/sign__eye.svg');
   }
 }
+
 .password__wrapper {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4px;
+
   input {
     border: 1px solid #E2E8ED;
     box-sizing: border-box;
@@ -1749,16 +1810,19 @@ th::first-letter {
     padding: 8px 16px;
     border-radius: 8px;
     width: 100%;
+
     &:focus {
       outline: none;
       background-color: #ffffff;
       border: 1px solid #406cff;
       color: #495055;
     }
+
     &:hover {
       background-color: #f7f8fa;
     }
   }
+
   button {
     position: absolute;
     right: 16px;
@@ -1768,6 +1832,7 @@ th::first-letter {
     background: transparent url(../img/show-password.svg) center center no-repeat;
     border: none;
     cursor: pointer;
+
     &:focus {
       outline: none;
     }
@@ -2716,13 +2781,21 @@ th::first-letter {
 }
 
 .table__date-btn {
+  display: inline;
   border: none;
   margin: 0;
-  margin-left: 12px;
+  margin-left: 5px;
   width: 16px;
   height: 16px;
   background: transparent url('../img/sign__calendar.svg') center center no-repeat;
   vertical-align: text-top;
+  font-size: 0px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+
+  }
 }
 
 .exchange-table {
@@ -2991,18 +3064,21 @@ th::first-letter {
   position: relative;
   cursor: pointer;
 }
+
 .pagination-list {
   position: absolute;
   width: 100%;
   background-color: #fff;
   box-shadow: 0px 11px 18px rgba(15, 28, 75, 0.13);
   cursor: pointer;
+
   .pagination-list__item {
     padding: 3px 12px;
 
     &:hover {
       background-color: #f7f8fa;
     }
+
     &:active {
       background-color: #e2e8ed;
     }
@@ -3698,6 +3774,12 @@ th::first-letter {
 
 .invite-members__link {
   margin-bottom: 24px;
+
+  input {
+    cursor: pointer;
+    background: transparent url('../img/link-copy.svg') center center no-repeat;
+    background-position: calc(100% - 16px) 8px;
+  }
 }
 
 .invite-members__btn {
@@ -4011,7 +4093,7 @@ th::first-letter {
   }
 }
 
-.content__item--not-ver {
+.profile__content .content__item--not-ver {
 
   .not-verify {
     display: block;
@@ -4364,7 +4446,7 @@ $red: #ff5151;
 
   .uploaded-docs__wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .document__pic {
@@ -4487,7 +4569,7 @@ $red: #ff5151;
 
   &:first-child {
     &:hover {
-      border-radius: 8px 8px 0 0 ;
+      border-radius: 8px 8px 0 0;
     }
   }
 
@@ -4611,6 +4693,7 @@ $red: #ff5151;
 
   .page-main__exchange {
     padding-top: 64px;
+    padding-bottom: 16px;
   }
 
 
@@ -4708,7 +4791,7 @@ $red: #ff5151;
 
   .reviews__content {
     flex-direction: column;
-    row-gap: 32px;
+    // row-gap: 32px;
   }
 
   .reviews__text {
@@ -4719,7 +4802,7 @@ $red: #ff5151;
   }
 
   .reviews__author {
-    column-gap: 8px
+    // column-gap: 8px
   }
 
   /* currencies */
@@ -4836,6 +4919,7 @@ $red: #ff5151;
   .settings__wrapper .program {
     padding: 4px 15px;
   }
+
   .program__wrapper .program {
     padding: 4px 11px;
   }
@@ -4979,6 +5063,10 @@ $red: #ff5151;
   .main-nav__link {
     color: #ffffff;
 
+    &:hover {
+      color: #cfcfcf;
+    }
+
     &--exchange {
       position: relative;
       padding-left: 30px;
@@ -4994,7 +5082,6 @@ $red: #ff5151;
         background-image: url(../img/bitcoin-euro-header.svg);
         background-repeat: no-repeat;
         background-position: center center;
-
       }
     }
 
@@ -5046,6 +5133,7 @@ $red: #ff5151;
 
   .page-main__exchange {
     padding-top: 110px;
+    padding-bottom: 61px;
   }
 
   .exchange__logo {
@@ -5162,7 +5250,11 @@ $red: #ff5151;
   }
 
   .reviews__author {
-    column-gap: 16px
+    // column-gap: 16px
+  }
+
+  .review-author__avatar {
+    margin-right: 16px;
   }
 
   .currencies.container {
@@ -5395,6 +5487,10 @@ $red: #ff5151;
 
   .article-list {
     padding: 32px 0 80px 0;
+
+    .slider__line {
+      padding-bottom: 0;
+    }
   }
 
   .article-list__wrapper.container {
@@ -5407,12 +5503,6 @@ $red: #ff5151;
     width: 288px;
   }
 
-  .article-list__content {
-
-    .slider__line {
-      // margin-bottom: 54px;
-    }
-  }
 
   .article-list__more {
     margin-top: 54px;
@@ -6566,6 +6656,10 @@ $red: #ff5151;
 
     .invite-members__link {
       display: flex;
+      input {
+        cursor: initial;
+        background: none;
+      }
 
     }
 
@@ -6799,6 +6893,10 @@ $red: #ff5151;
   .uploaded-docs {
     padding-top: 24px;
 
+    .uploaded-docs__wrapper {
+      justify-content: center;
+    }
+
     .profile__title {
       margin-bottom: 7px;
     }
@@ -6830,5 +6928,9 @@ $red: #ff5151;
         }
       }
     }
+  }
+
+  .profile__content .content__item--not-ver {
+    padding: 7px 24px;
   }
 }
