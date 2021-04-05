@@ -263,7 +263,7 @@ let requirements = document.querySelectorAll('.requirements .requirements__item'
 let requirementsTrue = document.querySelectorAll('.requirements .requirements__item--true').length;
 let progressLine = document.querySelector('.profile-ver__progress');
 
-if (requirementsTrue) {
+if (requirementsTrue && progressLine ) {
   let i = 0;
 
   for (let i = 0; i < requirements; i++) {
