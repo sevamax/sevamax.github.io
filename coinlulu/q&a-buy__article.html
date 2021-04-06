@@ -6,8 +6,11 @@
   <title>Coinolulu - Q&A</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <meta
+  name="description"           
+  content="Coinlulu. Fast and convenient cryptocurrency exchange">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -15,7 +18,7 @@
     <div class="container">
       <div class="header__wrapper">
         <a href="index.html" class="page-header__logo main-page__logo">
-          <img src="img/logotype-mobile.svg" alt="Coinolulu">
+          <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
         </a>
         <button class="nav-toggle" type="button">
           <span class="visually-hidden">Open menu</span>
@@ -23,8 +26,8 @@
         <nav class="main-nav">
 
           <div class="main-nav__header container">
-            <img src="img/logotype-mobile.svg" alt="Coinolulu">
-            <button class="main-nav__close" type="button"></button>
+            <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
+            <button class="main-nav__close" type="button" aria-label="close main nav"></button>
           </div>
 
           <div class="main-nav__list-wrapper">
@@ -76,9 +79,9 @@
         <h1 class="qa__title">Advice and answers from the Coinolulu Team</h1>
         <input class="qa__search" type="text" placeholder="Enter time, Order ID, Currency pair">
       </div>
-      </div>
     </section>
     <section class="answer container">
+      <h2 class="visually-hidden">Q&A article</h2>
       <ul class="answer__breadcrumbs breadcrumbs__list">
         <li><a href="q&a.html">All Collections</a></li>
         <li><a href="q&a-buy.html">Buy cryptocurrency</a></li>
@@ -90,7 +93,7 @@
           <div class="collection-card__author-pic"></div>
           <div class="collection-card__author">
             <div class="collection-card__articles">Updated over a week ago</div>
-            <p>Written by<a class="collection-card__author-name">Anna</a></p>
+            <p>Written by<a href="#" class="collection-card__author-name">Anna</a></p>
           </div>
         </div>
         <div class="answer__text">
@@ -112,6 +115,7 @@
             <button class="answer__button text-btn">Yes</button>
           </div>
         </div>
+      </div>
     </section>
   </main>
 
@@ -151,8 +155,8 @@
         </div>
       </nav>
       <div class="page-footer__logo-wrapper">
-        <a class="page-footer__logo">
-          <img src="img/logotype-mobile.svg" alt="Coinolulu">
+        <a href="index.html" class="page-footer__logo">
+          <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
           <p class="page-footer__logo-text">This design toolkit aimed for building highly loaded interfaces, boost the
             team's superpower and save more costs.</p>
         </a>
@@ -180,11 +184,9 @@
         </div>
       </div>
     </div>
-    <button class="page-footer__write" type="button"></button>
+    <button class="page-footer__write" type="button" aria-label="Text Us"></button>
   </footer>
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

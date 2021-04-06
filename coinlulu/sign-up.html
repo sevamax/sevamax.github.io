@@ -6,12 +6,14 @@
   <title>Coinolulu - Sign-up</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+  name="description"           
+  content="Coinlulu. Fast and convenient cryptocurrency exchange">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-  <link href="lib/date-picker/datepicker.min.css" rel="stylesheet" type="text/css">
-
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <link href="/lib/date-picker/datepicker.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page__body page__minor page__pop">
@@ -20,7 +22,7 @@
 
     <header class="sign__header container">
       <a href="index.html" class="page-header__logo main-page__logo">
-        <img src="img/logotype-mobile.svg" alt="Coinolulu">
+        <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
       </a>
     </header>
 
@@ -34,8 +36,7 @@
           <label for="sign-surname" class="sign__surname sign__label">Last name</label>
           <input id="sign-surname" class="sign__input input" type="text" placeholder="Enter your last name...">
 
-          <label for="sign-country" class="sign__country sign__label">Country of residence</label>
-          <!-- <input id="sign-country" class="sign__input input" type="text" placeholder="Select country"> -->
+          <label class="sign__country sign__label">Country of residence</label>
           <div class="select-wrapper">
             <div class="select select--country">
               <div class="select__active">
@@ -64,7 +65,7 @@
           <label for="sign-password" class="sign__password sign__label">Password</label>
           <div class="password__wrapper">
             <input id="sign-password" type="password" placeholder="Create password">
-            <button class="show-password show-password--current" type="button"></button>
+            <button class="show-password show-password--current" type="button" aria-label="show password"></button>
           </div>
 
 
@@ -105,8 +106,8 @@
 
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="lib/date-picker/datepicker.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="/lib/date-picker/datepicker.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -6,8 +6,11 @@
   <title>Coinolulu - Dashboard</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <meta
+  name="description"           
+  content="Coinlulu. Fast and convenient cryptocurrency exchange">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page__body page__minor page__admin">
@@ -15,7 +18,7 @@
     <div class="container wrapper">
       <div class="header__wrapper">
         <a href="index.html" class="page-header__logo main-page__logo">
-          <img src="img/logotype-mobile.svg" alt="Coinolulu">
+          <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
         </a>
         <button class="nav-toggle" type="button">
           <span class="visually-hidden">Open menu</span>
@@ -23,8 +26,8 @@
         <nav class="main-nav">
 
           <div class="main-nav__header container">
-            <img src="img/logotype-mobile.svg" alt="Coinolulu">
-            <button class="main-nav__close" type="button"></button>
+            <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
+            <button class="main-nav__close" type="button" aria-label="close main nav"></button>
           </div>
 
           <div class="main-nav__list-wrapper">
@@ -169,7 +172,7 @@
       <div class="profile__header">
         <h3 class="profile__title">Profile</h3>
         <div class="profile__avatar-wrapper">
-          <img src="img/main-user-photo.jpg" alt="photo of user">
+          <img src="img/main-user-photo.jpg" width="120" height="120" alt="photo of user">
           <button class="profile__avatar-change primary-btn" type="button">Change avatar</button>
         </div>
       </div>
@@ -186,7 +189,7 @@
             <p class="content__name">Name</p>
             <p class="content__value">Vova Black</p>
           </div>
-          <button class="content__change--arrow text-btn" type="button"></button>
+          <button class="content__change--arrow text-btn" type="button" aria-label="change"></button>
         </div>
 
         <div class="content__item">
@@ -201,7 +204,7 @@
             <p class="content__name">Date of birth</p>
             <p class="content__value content__value--small">30 may, 1996</p>
           </div>
-          <button class="content__change--arrow text-btn" type="button"></button>
+          <button class="content__change--arrow text-btn" type="button" aria-label="change"></button>
         </div>
 
         <div class="content__item">
@@ -216,7 +219,7 @@
             <p class="content__name">Legal address</p>
             <p class="content__value content__value--small">Ukraine</p>
           </div>
-          <button class="content__change--arrow text-btn" type="button"></button>
+          <button class="content__change--arrow text-btn" type="button" aria-label="change"></button>
         </div>
 
         <div class="content__item content__item--email content__item--not-ver">
@@ -240,7 +243,7 @@
                 class="text-btn">Resend
                 verefication</a></p>
           </div>
-          <button class="content__change--arrow text-btn" type="button"></button>
+          <button class="content__change--arrow text-btn" type="button" aria-label="change"></button>
         </div>
 
         <div class="content__item">
@@ -255,7 +258,7 @@
             <p class="content__name">Phone</p>
             <p class="content__value">+380** *** ** 31</p>
           </div>
-          <button class="content__change--arrow text-btn" type="button"></button>
+          <button class="content__change--arrow text-btn" type="button" aria-label="change"></button>
         </div>
 
         <div class="content__item content__item--password">
@@ -270,7 +273,7 @@
             <p class="content__name">Password</p>
             <p class="content__value">Updated month ago</p>
           </div>
-          <button class="content__change--arrow content__change--password text-btn" type="button"></button>
+          <button class="content__change--arrow content__change--password text-btn" type="button" aria-label="change"></button>
         </div>
 
       </div>
@@ -281,10 +284,10 @@
         <div class="instruction__upload desktop-text">
           <input class="visually-hidden" type="file" id="document-phot" name="photo">
           <label id="document-label" for="document-phot" class="secondary-btn instruction__button file-uploaded">
-            <div class="upload-photo"></div>
-            <div class="upload-text">
+            <img src="/img/upload.svg" width="40" height="40" alt="upload file" class="upload-photo">
+            <strong class="upload-text">
               Drag a file or <span>browse</span> to upload
-            </div>
+            </strong>
             <small class="upload__note">Image up to 10MB</small>
           </label>
         </div>
@@ -349,7 +352,7 @@
       </div>
     </section>
   </main>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

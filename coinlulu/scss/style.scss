@@ -5,6 +5,7 @@
     url('../fonts/gilroy-bold-webfont.ttf') format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,9 +13,9 @@
   src: url("../fonts/gilroy-semibold-webfont.woff2") format("woff2"),
     url("../fonts/gilroy-semibold-webfont.woff") format("woff"),
     url('../fonts/gilroy-semibold-webfont.ttf') format("truetype");
-
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +25,7 @@
     url('../fonts/gilroy-regular-webfont.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 $desktop: 1068px;
@@ -83,16 +85,6 @@ th::first-letter {
 .menu-open {
   overflow-y: hidden;
 
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   right: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   top: 0;
-  //   background-color: rgba(0, 0, 0, 0.5);
-  //   z-index: 100;
-  // }
 }
 
 .show-password {
@@ -276,11 +268,9 @@ th::first-letter {
 
 .slider__line {
   display: flex;
-  // column-gap: 16px;
   align-items: center;
   overflow: hidden;
   filter: drop-shadow(0px 3px 18px rgba(15, 28, 75, 0.13));
-  //  box-shadow: 0 11px 18px rgba(15, 28, 75, 0.13);
 }
 
 .info-card {
@@ -296,8 +286,6 @@ th::first-letter {
     margin-left: 16px;
   }
 
-  // box-shadow: 0 11px 18px rgba(15, 28, 75, 0.13);
-  // filter: drop-shadow(0px 3px 18px rgba(15, 28, 75, 0.13));
 }
 
 .info-card__name {
@@ -393,7 +381,6 @@ th::first-letter {
 
 .currency-select {
   display: flex;
-  // column-gap: 12px;
   align-items: center;
 
   input {
@@ -875,7 +862,6 @@ th::first-letter {
   display: flex;
   flex-direction: column;
 
-  // row-gap: 24px
   &+& {
     margin-top: 32px;
   }
@@ -961,9 +947,7 @@ th::first-letter {
 
 .currencies__main {
   display: flex;
-  // row-gap: 16px;
   flex-wrap: wrap;
-  // column-gap: 12px;
 }
 
 
@@ -1022,11 +1006,6 @@ th::first-letter {
 
 
 .page-footer__copyright {
-  //   display: flex;
-  //   flex-direction: column;
-  //   row-gap: 8px;
-  //   padding-top: 16px;
-  //   color: #959ca5;
   border-top: 1px solid $grey2;
 }
 
@@ -1253,7 +1232,6 @@ th::first-letter {
   display: flex;
   margin: auto;
   justify-content: center;
-  // margin-top: 24px;
   margin-top: 0;
 }
 
@@ -1327,7 +1305,6 @@ th::first-letter {
 
 .particle__control {
   box-sizing: border-box;
-  // width: 136px ;
   padding: 8px;
 }
 
@@ -1482,7 +1459,6 @@ th::first-letter {
 .collection-card__footer {
   display: flex;
   align-items: flex-end;
-  // column-gap: 5px;
 }
 
 .collection-card__author-pic {
@@ -1512,6 +1488,7 @@ th::first-letter {
   color: #4F5E6B;
   cursor: pointer;
   margin-left: 4px;
+  text-decoration: none;
 }
 
 
@@ -1647,7 +1624,6 @@ th::first-letter {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  // color: #6d86ff;
 }
 
 .answer__answers {
@@ -1656,12 +1632,6 @@ th::first-letter {
 
 
 /* sign-in */
-
-.sign__wrapper {
-  .container {
-    // max-width: 280px;
-  }
-}
 
 .sign__header {
   padding-top: 25px;
@@ -1701,7 +1671,6 @@ th::first-letter {
   max-width: 272px;
   margin: 0 auto;
   display: flex;
-  // border-top: 1px solid #e2e8ed;
 }
 
 .sign__label {
@@ -2070,11 +2039,6 @@ th::first-letter {
   color: #959CA5;
 }
 
-.email-answer__wrapper {
-  .email-ver__footer {
-    // margin-top: 180px;
-  }
-}
 
 .verify__wrapper {
   text-align: center;
@@ -2148,7 +2112,6 @@ th::first-letter {
       background-image: url('../img/email-verification.svg');
     }
 
-    &--id {}
   }
 
 
@@ -2436,6 +2399,9 @@ th::first-letter {
 
   .upload-photo {
     display: none;
+  }
+  .upload-text {
+    font-weight: 600;
   }
 }
 
@@ -2761,7 +2727,6 @@ th::first-letter {
     line-height: 28px;
     color: #495055;
   }
-
   .table__search {
     position: relative;
     box-sizing: border-box;
@@ -2970,7 +2935,6 @@ th::first-letter {
 
 .pagination__page-item:first-child {
   position: relative;
-  // padding-right: 36px;
 }
 
 .pagination__input {
@@ -2992,8 +2956,6 @@ th::first-letter {
     border: 1px solid #E2E8ED;
     border-radius: 2px;
 
-    &:hover,
-    &:focus {}
   }
 }
 
@@ -3345,26 +3307,10 @@ th::first-letter {
   top: 0;
   background: #fff;
 
-  &::before {
-    // content: '';
-    // position: absolute;
-    // width: 100%;
-    // height: 100%;
-    // background-color: #000000;
-    // opacity: 0.2;
-  }
 
   .exchange-operation__content {
     padding: 0;
-    // position: absolute;
-    // top: 50%;
-    // right: 50%;
-    // bottom: 0;
     z-index: 2;
-    // width: 320px;
-    // height: 792px;
-    // transform: translate(50%, -50%);
-    // border-radius: 24px;
     background-color: #ffffff;
     max-width: 460px;
     margin: 0 auto;
@@ -3378,7 +3324,6 @@ th::first-letter {
     text-align: center;
   }
 
-  .exchange-operation__wrapper {}
 
   .exchange-operation__title {
     margin: 0;
@@ -3505,7 +3450,6 @@ th::first-letter {
     color: #495055;
   }
 
-  .detail__value {}
 
 }
 
@@ -3655,7 +3599,6 @@ th::first-letter {
   font-size: 20px;
   line-height: 32px;
   color: #495055;
-  // text-align: center;
 }
 
 .program__wrapper {
@@ -3684,7 +3627,6 @@ th::first-letter {
       border-right: 1px solid #e2e7e8;
     }
 
-    &--par {}
 
     &--active {
       background: $blue1;
@@ -3705,9 +3647,6 @@ th::first-letter {
       border-radius: 0 26px 26px 0;
     }
 
-    // &--active.program--par ~ .program--ref {
-    //   left: 0;
-    // }
   }
 
   &--par {
@@ -3724,6 +3663,11 @@ th::first-letter {
   font-size: 18px;
   line-height: 28px;
   color: #495055;
+}
+
+label.program__title {
+  display: block;
+  margin-bottom: 4px;
 }
 
 .page__admin {
@@ -3768,9 +3712,6 @@ th::first-letter {
   }
 }
 
-.program__content.container {
-  // max-width: 300px;
-}
 
 .invite-members__link {
   margin-bottom: 24px;
@@ -3945,7 +3886,6 @@ th::first-letter {
 }
 
 .partner-program__wrapper {
-  // padding: 16px;
   padding-top: 0;
 
   .program__title {
@@ -4791,7 +4731,6 @@ $red: #ff5151;
 
   .reviews__content {
     flex-direction: column;
-    // row-gap: 32px;
   }
 
   .reviews__text {
@@ -4801,9 +4740,6 @@ $red: #ff5151;
     border-radius: 16px;
   }
 
-  .reviews__author {
-    // column-gap: 8px
-  }
 
   /* currencies */
 
@@ -4935,6 +4871,8 @@ $red: #ff5151;
   .container {
     max-width: 1120px;
   }
+
+  
 
   .desktop-def {
     display: inline;
@@ -5111,7 +5049,6 @@ $red: #ff5151;
     padding: 0;
     color: #fff;
     border: none;
-    // border-radius: none;
   }
 
   .user-list__sign-up {
@@ -5249,9 +5186,6 @@ $red: #ff5151;
     border-radius: 16px;
   }
 
-  .reviews__author {
-    // column-gap: 16px
-  }
 
   .review-author__avatar {
     margin-right: 16px;
@@ -6280,9 +6214,6 @@ $red: #ff5151;
     .container {
       max-width: 1200px;
     }
-
-
-
     .table__title,
     .admin__title {
       font-size: 20px;
@@ -6539,9 +6470,6 @@ $red: #ff5151;
       margin: initial;
     }
 
-    .exchange-operation__header {}
-
-    .exchange-operation__wrapper {}
 
     .exchange-operation__title {
       font-weight: normal;
@@ -6550,10 +6478,6 @@ $red: #ff5151;
       color: #495055;
       margin: 0;
     }
-
-    .exchange-operation__date {}
-
-    .exchange-operation__close {}
 
     .exchange-operation__picture {
       background-image: url('../img/exchange-details--desk.svg');
@@ -6569,6 +6493,10 @@ $red: #ff5151;
   }
 
   .admin__content {
+
+    .exchange-order {
+      margin-top: 24px;
+    }
     .new-order {
       .section__title {
         font-weight: 600;
@@ -6583,18 +6511,20 @@ $red: #ff5151;
         border-radius: 16px;
         border-bottom: none;
       }
+
+      .admin__title {
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 600;
+      }
+  
     }
 
     .new-order .container {
       max-width: 800px;
     }
 
-    .admin__title {
-      margin-bottom: 0;
-      font-size: 16px;
-      line-height: 28px;
-      font-weight: 600;
-    }
 
     .cryptocurrency-exchange {
       .current-rate__number {
@@ -6733,7 +6663,6 @@ $red: #ff5151;
     background: #FFFFFF;
     box-shadow: 0px 11px 18px rgba(15, 28, 75, 0.03);
     border-radius: 16px;
-    // padding: 24px;
     max-width: 400px;
     margin: 0 auto;
 
@@ -6861,7 +6790,6 @@ $red: #ff5151;
       margin-bottom: 0;
     }
 
-    label {}
   }
 
   .security-popup {

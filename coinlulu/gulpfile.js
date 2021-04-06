@@ -33,7 +33,7 @@ function toCss(done){
 }
 
 function minjs(done) {
-    gulp.src("./js/site.js")
+    gulp.src("./js/script.js")
     .pipe(minify({
         ext: {
             min: '.min.js'

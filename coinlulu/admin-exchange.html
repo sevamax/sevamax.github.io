@@ -6,9 +6,12 @@
   <title>Coinolulu - admin exchange order</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-  <link href="lib/date-picker/datepicker.min.css" rel="stylesheet" type="text/css">
+  <meta
+  name="description"           
+  content="Coinlulu. Fast and convenient cryptocurrency exchange">
+  <link href="/lib/date-picker/datepicker.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page__body page__minor page__admin">
@@ -16,7 +19,7 @@
     <div class="container wrapper">
       <div class="header__wrapper">
         <a href="index.html" class="page-header__logo main-page__logo">
-          <img src="img/logotype-mobile.svg" alt="Coinolulu">
+          <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
         </a>
         <button class="nav-toggle" type="button">
           <span class="visually-hidden">Open menu</span>
@@ -24,8 +27,8 @@
         <nav class="main-nav">
 
           <div class="main-nav__header container">
-            <img src="img/logotype-mobile.svg" alt="Coinolulu">
-            <button class="main-nav__close" type="button"></button>
+            <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
+            <button class="main-nav__close" type="button" aria-label="close nav menu"></button>
           </div>
 
           <div class="main-nav__list-wrapper">
@@ -163,7 +166,7 @@
     <section class="exchange-order container">
       <h2 class="table__title admin__title">Exchange orders</h2>
       <input class="table__search" type="text" placeholder="Enter time, Order ID, Currency pair">
-      <button class="table__date-btn" type="button"></button>
+      <input type="submit" class="table__date-btn datepicker-here">
 
       <table class="exchange-table">
         <thead>
@@ -254,8 +257,8 @@
           <input id="pagination-input" type="text" value="1">
         </div>
         <div class="pagination__list">
-          <button class="pagination__arrow pagination__to-first" type="button" disabled></button>
-          <button class="pagination__arrow pagination__back" type="button" disabled></button>
+          <button class="pagination__arrow pagination__to-first" type="button" disabled aria-label="go to the first page"></button>
+          <button class="pagination__arrow pagination__back" type="button" disabled aria-label="go to the previous page"></button>
           <div class="pagination__page">
             <button class="pagination__page-item pagination__page-item--active" type="button">1</button>
             <button class="pagination__page-item" type="button">2</button>
@@ -267,8 +270,8 @@
             <button class="pagination__page-item" type="button">8</button>
             <button class="pagination__page-item" type="button">12</button>
           </div>
-          <button class="pagination__arrow pagination__next " type="button"></button>
-          <button class="pagination__arrow  pagination__to-last" type="button"></button>
+          <button class="pagination__arrow pagination__next " type="button" aria-label="go to the next page"></button>
+          <button class="pagination__arrow  pagination__to-last" type="button" aria-label="go to the last page"></button>
         </div>
         <div class="pagination-range">
           <span class="pagination__numbers">1-10 of 120</span>
@@ -346,10 +349,9 @@
       </div>
     </div>
   </main>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="lib/date-picker/datepicker.min.js"></script>
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="/lib/date-picker/datepicker.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

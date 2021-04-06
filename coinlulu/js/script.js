@@ -7,7 +7,6 @@ let menuCloseBtn = document.querySelector('.main-nav__close');
 if (navMenuToggle) {
   navMenuToggle.addEventListener('click', e => {
 
-    console.log(isMenuOpen);
     if (innerWidth < 1068) {
       if (!isMenuOpen) {
         isMenuOpen = !isMenuOpen;
@@ -58,7 +57,6 @@ if (header) {
       } else {
         header.classList.remove('page-header--add');
       }
-      // console.log(scrollTop);
     }
   });
 }
@@ -90,7 +88,6 @@ let additionalFiatCurrs = document.querySelectorAll('.fiat .currencies__currency
 if (showAllCryptoBtn) {
 
   showAllCryptoBtn.addEventListener('click', e => {
-    console.log('You click on showAllCryptoBtn ');
     for (let additionalCryptoCurr of additionalCryptoCurrs) {
       additionalCryptoCurr.style.display = "block";
     }
@@ -100,7 +97,6 @@ if (showAllCryptoBtn) {
 
 
   showLessCryptoBtn.addEventListener('click', e => {
-    console.log('You click on showLessCryptoBtn ');
     for (let additionalCryptoCurr of additionalCryptoCurrs) {
       additionalCryptoCurr.style.display = "none";
     }
@@ -111,7 +107,6 @@ if (showAllCryptoBtn) {
   /* Fiat */
 
   showAllFiatBtn.addEventListener('click', e => {
-    console.log('You click on showAllCryptoBtn ');
     for (let additionalFiatCurr of additionalFiatCurrs) {
       additionalFiatCurr.style.display = "block";
     }
@@ -234,7 +229,6 @@ if (idTypeValue) {
       IdWrapper.classList.toggle('visually-hidden');
     }
 
-    console.log(idTypeValue);
   });
 }
 
@@ -251,7 +245,6 @@ if (userButton) {
     window.addEventListener('keyup', e => {
       if (e.code == 'Escape') {
         userPopup.classList.add('d-none');
-        console.log(1);
       }
     });
   }
@@ -263,7 +256,7 @@ let requirements = document.querySelectorAll('.requirements .requirements__item'
 let requirementsTrue = document.querySelectorAll('.requirements .requirements__item--true').length;
 let progressLine = document.querySelector('.profile-ver__progress');
 
-if (requirementsTrue && progressLine ) {
+if (requirementsTrue && progressLine) {
   let i = 0;
 
   for (let i = 0; i < requirements; i++) {
@@ -313,7 +306,7 @@ let exchangeTableAmounts = document.querySelectorAll('.exchange-table__amount');
 
 /* Popups` values */
 let detailValueCreated = document.querySelector('.detail__value--created');
-let detailValueExecuted = document.querySelector('.detail__value--executed'); // хз что это
+let detailValueExecuted = document.querySelector('.detail__value--executed');
 let detailValueType = document.querySelector('.detail__value--type');
 let detailValuePayment = document.querySelector('.detail__value--payment');
 let detailValueStatus = document.querySelector('.detail__value--status');
@@ -548,7 +541,6 @@ let changePasswordMob = document.querySelector('.content__change--password');
 if (changePasswordMob) {
 
   changePasswordMob.addEventListener('click', e => {
-    console.log(123);
     document.body.insertAdjacentHTML('afterbegin',
       `<div class="change-password-mob" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #fff; z-index: 5000; padding-top: 8px; padding-left: 24px; padding-right: 24px; display: flex;
  justify-content: flex-start; flex-direction: column">
@@ -604,7 +596,6 @@ if (changePasswordMob) {
 }
 
 
-// let countrySelect = document.querySelector('.select--country');
 let countryList = document.querySelector('.select--country .select-list');
 let countryActive = document.querySelector('.select--country .select__active');
 let countryItems = document.querySelectorAll('.select--country .select-list__item');
@@ -677,6 +668,7 @@ if (paginationBtn) {
 
 let indexSlider = document.querySelector('.exchange__info');
 let copySlider;
+
 if (indexSlider) {
   copySlider = indexSlider.cloneNode(true);
 

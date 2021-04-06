@@ -6,8 +6,11 @@
   <title>Coinolulu - Verify account Step 3</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <meta
+  name="description"           
+  content="Coinlulu. Fast and convenient cryptocurrency exchange">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page__body page__minor page__pop">
@@ -16,7 +19,7 @@
 
     <header class="sign__header container">
       <a href="index.html" class="page-header__logo main-page__logo">
-        <img src="img/logotype-mobile.svg" alt="Coinolulu">
+        <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
       </a>
     </header>
 
@@ -73,10 +76,9 @@
             <div class="instruction__upload">
               <input class="visually-hidden" type="file" id="front-passport-photo" name="photo">
               <label id="front-passport-label" for="front-passport-photo" class="secondary-btn instruction__button">
-                <div class="upload-photo"></div>
+                <img src="/img/upload.svg" width="40" height="40" alt="upload file" class="upload-photo">
                 Upload the <span>front</span> of your document <span class="desktop__attention">*</span>
                 <small class="upload__note">Image up to 10MB</small>
-                <div class="visually-hidden" id="file-name"></div>
               </label>
               <div class="visually-hidden" id="front-photo-passport-wrapper">
                 <span id="front-passport-name">File name</span>
@@ -84,12 +86,9 @@
               </div>
 
               <input class="visually-hidden" type="file" id="back-passport-phot" name="photo">
-              <label id="back-passport-label" for="back-passport-phot"
-                class="secondary-btn instruction__button file-uploaded">
-                <div class="upload-photo"></div>
-                <div class="upload-text">
+              <label id="back-passport-label" for="back-passport-phot" class="secondary-btn instruction__button">
+                <img src="/img/upload.svg" width="40" height="40" alt="upload file" class="upload-photo">
                   Upload the <span>back</span> of your document <span class="desktop__attention">*</span>
-                </div>
                 <small class="upload__note">Image up to 10MB</small>
               </label>
               <div class="visually-hidden" id="back-photo-passport-wrapper">
@@ -119,10 +118,9 @@
             <div class="instruction__upload">
               <input class="visually-hidden" type="file" id="front-id-photo" name="photo">
               <label id="front-id-label" for="front-id-photo" class="secondary-btn instruction__button">
-                <div class="upload-photo"></div>
+                <img src="/img/upload.svg" width="40" height="40" alt="upload file" class="upload-photo">
                 Upload the <span>front</span> of your document <span class="desktop__attention">*</span>
                 <small class="upload__note">Image up to 10MB</small>
-                <div class="visually-hidden" id="file-name"></div>
               </label>
               <div class="visually-hidden" id="front-photo-id-wrapper">
                 <span id="front-id-name">File name</span>
@@ -132,10 +130,8 @@
               <input class="visually-hidden" type="file" id="back-id-phot" name="photo">
               <label id="back-id-label" for="back-id-phot"
                 class="secondary-btn instruction__button file-uploaded">
-                <div class="upload-photo"></div>
-                <div class="upload-text">
+                <img src="/img/upload.svg" width="40" height="40" alt="upload file" class="upload-photo">
                   Upload the <span>back</span> of your document <span class="desktop__attention">*</span>
-                </div>
                 <small class="upload__note">Image up to 10MB</small>
               </label>
               <div class="visually-hidden" id="back-photo-id-wrapper">
@@ -161,7 +157,7 @@
     </footer>
 
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

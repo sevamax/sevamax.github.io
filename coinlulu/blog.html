@@ -6,8 +6,11 @@
   <title>Coinolulu - Blog</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <meta
+  name="description"           
+  content="Coinlulu. Fast and convenient cryptocurrency exchange">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page__body page__minor">
@@ -15,7 +18,7 @@
     <div class="container">
       <div class="header__wrapper">
         <a href="index.html" class="page-header__logo main-page__logo">
-          <img src="img/logotype-mobile.svg" alt="Coinolulu">
+          <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
         </a>
         <button class="nav-toggle" type="button">
           <span class="visually-hidden">Open menu</span>
@@ -23,8 +26,8 @@
         <nav class="main-nav">
 
           <div class="main-nav__header container">
-            <img src="img/logotype-mobile.svg" alt="Coinolulu">
-            <button class="main-nav__close" type="button"></button>
+            <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
+            <button class="main-nav__close" type="button" aria-label="close main nav"></button>
           </div>
 
           <div class="main-nav__list-wrapper">
@@ -80,11 +83,10 @@
           safely. How to buy Bitcoin from scratch (step by step instructions). The choice of cryptocurrency exchanger.
           Bitcoin price.</p>
       </div>
-      </div>
     </section>
     <section class="article-list">
       <div class="article-list__wrapper  container">
-        <h3 class="article-list__hashtag">#Beginners</h3>
+        <h2 class="article-list__hashtag">#Beginners</h2>
 
         <div class="article-list__content slider ">
           <div class="slider__control slider__control--prev">
@@ -92,14 +94,17 @@
           <div class="slider__line">
             <div class="article-card slider__item">
               <div class="article-card__photo">
-                <img src="img/article_1.jpg" width="288" height="160" alt="article one">
+                <picture>
+                  <source srcset="img/article_1.webp" type="image/webp">
+                  <img src="img/article_1.jpg" width="288" height="160" alt="image article one">
+                </picture>
               </div>
               <div class="article-card__content">
                 <p class="article-card__hashtag">#Beginners</p>
                 <a href="article.html" class="article-card__title">Receive cryptocurrency</a>
                 <p class="article-card__subtitle">Expect the receipt Of cryptocurrency at the details you specified.</p>
                 <div class="article-card__author">
-                  <img class="article-card__avatar" src="img/favicon.svg" width="24" height="24px"
+                  <img class="article-card__avatar" src="img/favicon.svg" width="24" height="24"
                     alt="author`s avatar">
                   <div class="article-card__date">
                     <p class="article-card__month">May 26</p>
@@ -110,14 +115,17 @@
             </div>
             <div class="article-card slider__item">
               <div class="article-card__photo">
-                <img src="img/article_3.jpg" width="288" height="160" alt="article one">
+                <picture>
+                  <source srcset="img/article_3.webp" type="image/webp">
+                  <img src="img/article_3.jpg" width="288" height="160" alt="image article 3">
+                </picture>
               </div>
               <div class="article-card__content">
                 <p class="article-card__hashtag">#Beginners</p>
                 <a href="article.html" class="article-card__title">Receive cryptocurrency</a>
                 <p class="article-card__subtitle">Expect the receipt Of cryptocurrency at the details you specified.</p>
                 <div class="article-card__author">
-                  <img class="article-card__avatar" src="img/favicon.svg" width="24" height="24px"
+                  <img class="article-card__avatar" src="img/favicon.svg" width="24" height="24"
                     alt="author`s avatar">
                   <div class="article-card__date">
                     <p class="article-card__month">May 26</p>
@@ -128,14 +136,17 @@
             </div>
             <div class="article-card slider__item">
               <div class="article-card__photo">
-                <img src="img/article_2.jpg" width="288" height="160" alt="article one">
+                <picture>
+                  <source srcset="img/article_2.webp" type="image/webp">
+                  <img src="img/article_2.jpg" width="288" height="160" alt="image article 2">
+                </picture>
               </div>
               <div class="article-card__content">
                 <p class="article-card__hashtag">#Beginners</p>
                 <a href="article.html" class="article-card__title">Receive cryptocurrency</a>
                 <p class="article-card__subtitle">Expect the receipt Of cryptocurrency at the details you specified.</p>
                 <div class="article-card__author">
-                  <img class="article-card__avatar" src="img/favicon.svg" width="24" height="24px"
+                  <img class="article-card__avatar" src="img/favicon.svg" width="24" height="24"
                     alt="author`s avatar">
                   <div class="article-card__date">
                     <p class="article-card__month">May 26</p>
@@ -144,12 +155,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="info-card slider__item">
-              <p class="info-card__name">ETH/EUR</p>
-              <p class="info-card__amount">€267.96</p>
-              <p class="info-card__percent">32.48%</p>
-              <p class="info-card__date">Last 24 hours</p>
-            </div> -->
           </div>
           <div class="slider__control slider__control--next">
 
@@ -199,8 +204,8 @@
         </div>
       </nav>
       <div class="page-footer__logo-wrapper">
-        <a class="page-footer__logo">
-          <img src="img/logotype-mobile.svg" alt="Coinolulu">
+        <a href="index.html" class="page-footer__logo">
+          <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
           <p class="page-footer__logo-text">This design toolkit aimed for building highly loaded interfaces, boost the
             team's superpower and save more costs.</p>
         </a>
@@ -228,11 +233,9 @@
         </div>
       </div>
     </div>
-    <button class="page-footer__write" type="button"></button>
+    <button class="page-footer__write" type="button" aria-label="Text Us"></button>
   </footer>
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

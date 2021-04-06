@@ -6,8 +6,11 @@
   <title>Coinolulu - Dashboard</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <meta
+  name="description"           
+  content="Coinlulu. Fast and convenient cryptocurrency exchange">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page__body page__minor page__admin">
@@ -17,7 +20,7 @@
       <div class="container wrapper order-header">
         <div class="header__wrapper">
           <a href="index.html" class="page-header__logo main-page__logo">
-            <img src="img/logotype-mobile.svg" alt="Coinolulu">
+            <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
           </a>
           <button class="nav-toggle" type="button">
             <span class="visually-hidden">Open menu</span>
@@ -25,8 +28,8 @@
           <nav class="main-nav">
 
             <div class="main-nav__header container">
-              <img src="img/logotype-mobile.svg" alt="Coinolulu">
-              <button class="main-nav__close" type="button"></button>
+              <img src="img/logotype-mobile.svg" width="142" height="24" alt="Coinolulu">
+              <button class="main-nav__close" type="button" aria-label="close main nav"></button>
             </div>
 
             <div class="main-nav__list-wrapper">
@@ -186,7 +189,7 @@
                     </div>
                   </div>
                   <div class="current-rate">
-                    <button class="current-rate__button" type="button"></button>
+                    <button class="current-rate__button" type="button" aria-label="change of direction "></button>
                     <p class="current-rate__number">1 BTC = 13124.243 EUR</p>
                   </div>
                   <div class="receive">
@@ -222,7 +225,7 @@
 
                 </div>
                 <div class="wallet-address">
-                  <h4 class="wallet-address__title">Your wallet address</h4>
+                  <h3 class="wallet-address__title">Your wallet address</h3>
                   <p class="wallet-address__text">Enter the wallet address in which benefit the purchase operation will
                     be
                     performed</p>
@@ -243,7 +246,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
