@@ -1,4 +1,3 @@
-
 // Link (en): http://es5.github.io/#x15.4.4.18
 //Polyfill for forEach()
 if (!Array.prototype.forEach) {
@@ -15,7 +14,7 @@ if (!Array.prototype.forEach) {
 
     var len = O.length >>> 0;
     if (typeof callback !== 'function') {
-        throw new TypeError(callback + ' is not a function');
+      throw new TypeError(callback + ' is not a function');
     }
     if (arguments.length > 1) {
       T = thisArg;
@@ -60,10 +59,10 @@ function navMenuFunc() {
   }
 }
 if (navMenuToggle) {
-  navMenuToggle.addEventListener('click', function(e) {
+  navMenuToggle.addEventListener('click', function (e) {
     navMenuFunc();
   });
-  menuCloseBtn.addEventListener('click', function(e) {
+  menuCloseBtn.addEventListener('click', function (e) {
     navMenuFunc();
   });
 }
@@ -92,10 +91,10 @@ let languageBtn = document.querySelector('.language__item');
 let languageList = document.querySelector('.language-list');
 
 if (languageBtn) {
-  languageBtn.addEventListener('click', function(e) {
+  languageBtn.addEventListener('click', function (e) {
     languageList.classList.toggle('d-none');
   })
-  languageList.addEventListener('click', function(e) {
+  languageList.addEventListener('click', function (e) {
     languageList.classList.toggle('d-none');
   })
 }
@@ -112,9 +111,9 @@ let additionalFiatCurrs = document.querySelectorAll('.fiat .currencies__currency
 
 if (showAllCryptoBtn) {
 
-  showAllCryptoBtn.addEventListener('click', function(e) {
+  showAllCryptoBtn.addEventListener('click', function (e) {
 
-    [].forEach.call(additionalCryptoCurrs, function(additionalCryptoCurr) { 
+    [].forEach.call(additionalCryptoCurrs, function (additionalCryptoCurr) {
       additionalCryptoCurr.style.display = "block";
     });
 
@@ -123,9 +122,9 @@ if (showAllCryptoBtn) {
   });
 
 
-  showLessCryptoBtn.addEventListener('click', function(e) {
+  showLessCryptoBtn.addEventListener('click', function (e) {
 
-    [].forEach.call(additionalCryptoCurrs, function(additionalCryptoCurr) { 
+    [].forEach.call(additionalCryptoCurrs, function (additionalCryptoCurr) {
       additionalCryptoCurr.style.display = "none";
     });
 
@@ -135,9 +134,9 @@ if (showAllCryptoBtn) {
 
   /* Fiat */
 
-  showAllFiatBtn.addEventListener('click', function(e) {
+  showAllFiatBtn.addEventListener('click', function (e) {
 
-    [].forEach.call(additionalFiatCurrs, function(additionalFiatCurr) { 
+    [].forEach.call(additionalFiatCurrs, function (additionalFiatCurr) {
       additionalFiatCurr.style.display = "block";
     });
 
@@ -147,9 +146,9 @@ if (showAllCryptoBtn) {
 
 
 
-  showLessFiatBtn.addEventListener('click', function(e) {
+  showLessFiatBtn.addEventListener('click', function (e) {
 
-    [].forEach.call(additionalFiatCurrs, function(additionalFiatCurr) { 
+    [].forEach.call(additionalFiatCurrs, function (additionalFiatCurr) {
       additionalFiatCurr.style.display = "none";
     });
 
@@ -157,26 +156,26 @@ if (showAllCryptoBtn) {
     showLessFiatBtn.style.display = "none";
   });
 
-  window.addEventListener('resize', function(e) {
+  window.addEventListener('resize', function (e) {
 
 
     if (document.body.clientWidth < 1068) {
 
-      [].forEach.call(additionalCryptoCurrs, function(additionalCryptoCurr) { 
+      [].forEach.call(additionalCryptoCurrs, function (additionalCryptoCurr) {
         additionalCryptoCurr.style.display = "none";
       });
 
-      [].forEach.call(additionalFiatCurrs, function(additionalFiatCurr) { 
+      [].forEach.call(additionalFiatCurrs, function (additionalFiatCurr) {
         additionalFiatCurr.style.display = "none";
       });
-  
+
 
       showAllCryptoBtn.style.display = "block";
       showAllFiatBtn.style.display = "block";
 
 
-      showAllCryptoBtn.addEventListener('click', function(e) {
-        [].forEach.call(additionalCryptoCurrs, function(additionalCryptoCurr) { 
+      showAllCryptoBtn.addEventListener('click', function (e) {
+        [].forEach.call(additionalCryptoCurrs, function (additionalCryptoCurr) {
           additionalCryptoCurr.style.display = "block";
         });
         showAllCryptoBtn.style.display = "none";
@@ -184,8 +183,8 @@ if (showAllCryptoBtn) {
       });
 
 
-      showLessCryptoBtn.addEventListener('click', function(e) {
-        [].forEach.call(additionalCryptoCurrs, function(additionalCryptoCurr) { 
+      showLessCryptoBtn.addEventListener('click', function (e) {
+        [].forEach.call(additionalCryptoCurrs, function (additionalCryptoCurr) {
           additionalCryptoCurr.style.display = "none";
         });
         showAllCryptoBtn.style.display = "block";
@@ -194,8 +193,8 @@ if (showAllCryptoBtn) {
 
       /* Fiat */
 
-      showAllFiatBtn.addEventListener('click', function(e) {
-        [].forEach.call(additionalFiatCurrs, function(additionalFiatCurr) { 
+      showAllFiatBtn.addEventListener('click', function (e) {
+        [].forEach.call(additionalFiatCurrs, function (additionalFiatCurr) {
           additionalFiatCurr.style.display = "block";
         });
         showAllFiatBtn.style.display = "none";
@@ -204,8 +203,8 @@ if (showAllCryptoBtn) {
 
 
 
-      showLessFiatBtn.addEventListener('click', function(e) {
-        [].forEach.call(additionalFiatCurrs, function(additionalFiatCurr) { 
+      showLessFiatBtn.addEventListener('click', function (e) {
+        [].forEach.call(additionalFiatCurrs, function (additionalFiatCurr) {
           additionalFiatCurr.style.display = "none";
         });
         showAllFiatBtn.style.display = "block";
@@ -214,10 +213,10 @@ if (showAllCryptoBtn) {
 
     } else {
 
-      [].forEach.call(additionalCryptoCurrs, function(additionalCryptoCurr) { 
+      [].forEach.call(additionalCryptoCurrs, function (additionalCryptoCurr) {
         additionalCryptoCurr.style.display = "block";
       });
-      [].forEach.call(additionalFiatCurrs, function(additionalFiatCurr) { 
+      [].forEach.call(additionalFiatCurrs, function (additionalFiatCurr) {
         additionalFiatCurr.style.display = "block";
       });
 
@@ -233,7 +232,7 @@ let password = document.querySelector('#sign-password');
 let showPassword = document.querySelector('.show-password--current');
 
 if (showPassword) {
-  showPassword.addEventListener('click', function(e) {
+  showPassword.addEventListener('click', function (e) {
     if (password.type != 'text') {
       password.type = 'text';
     } else {
@@ -254,7 +253,7 @@ let idTypeValue = document.querySelector('input[name="id-type"]:checked');
 
 if (idTypeValue) {
   idTypeValue = document.querySelector('input[name="id-type"]:checked').value;
-  document.addEventListener('change', function(e) {
+  document.addEventListener('change', function (e) {
 
     if (idTypeValue == 'passport') {
       passportWrapper.classList.toggle('visually-hidden');
@@ -273,11 +272,11 @@ let userButton = document.querySelector('.user__wrapper .user__name');
 let userPopup = document.querySelector('.user__popup');
 
 if (userButton) {
-  userButton.addEventListener('click', function(e) {
+  userButton.addEventListener('click', function (e) {
     userPopup.classList.toggle('d-none');
   });
   if (!userPopup.classList.contains('.d-none')) {
-    window.addEventListener('keyup', function(e) {
+    window.addEventListener('keyup', function (e) {
       if (e.code == 'Escape') {
         userPopup.classList.add('d-none');
       }
@@ -302,7 +301,7 @@ if (requirementsTrue && progressLine) {
 
   let progressBars = document.querySelectorAll('.profile-ver__progress .progress__bar');
 
-  [].forEach.call(progressBars, function(progressBar) { 
+  [].forEach.call(progressBars, function (progressBar) {
     if (i < requirementsTrue) {
       progressBar.classList.add('progress__bar--done');
       i++;
@@ -355,18 +354,18 @@ let detailValueGive = document.querySelector('.detail__value--give');
 let detailValueGet = document.querySelector('.detail__value--get');
 
 
-[].forEach.call(exchangeOperations, function(exchangeOperation) { 
+[].forEach.call(exchangeOperations, function (exchangeOperation) {
   exchangeOperation.setAttribute('data-row-num', j);
   j++;
 });
 
 let textexchangeOperation;
 for (let i = 1; i <= exchangeOperations.length; i++) {
-   textexchangeOperation = ".exchange__table-body tr[data-row-num=" + "'" + i + "'" + "]";
-  document.querySelector(textexchangeOperation).addEventListener('click', function(e) {
+  textexchangeOperation = ".exchange__table-body tr[data-row-num=" + "'" + i + "'" + "]";
+  document.querySelector(textexchangeOperation).addEventListener('click', function (e) {
 
     for (let j = 1; j <= exchangeOperations.length; j++) {
-      
+
       if (j === i) {
         detailValueCreated.textContent = exchangeTableDates[i].textContent;
         detailValueType.textContent = exchangeTableTyps[i].textContent;
@@ -386,11 +385,11 @@ if (exchangePopup) {
 
   if (!exchangePopup.classList.contains('.d-none')) {
 
-    exchangePopupClose.addEventListener('click', function(e) {
+    exchangePopupClose.addEventListener('click', function (e) {
       exchangePopup.classList.add('d-none');
     })
 
-    window.addEventListener('keyup', function(e) {
+    window.addEventListener('keyup', function (e) {
       if (e.code == 'Escape') {
         exchangePopup.classList.add('d-none');
       }
@@ -408,7 +407,7 @@ let programPar = document.querySelector('.program--par');
 
 
 if (programRef) {
-  programRef.addEventListener('click', function(e) {
+  programRef.addEventListener('click', function (e) {
     if (!programRef.classList.contains('program--active')) {
       programRef.classList.toggle('program--active');
       programPar.classList.toggle('program--active');
@@ -423,7 +422,7 @@ if (programRef) {
       }
     }
   });
-  programPar.addEventListener('click', function(e) {
+  programPar.addEventListener('click', function (e) {
     if (!programPar.classList.contains('program--active')) {
       programPar.classList.toggle('program--active');
       programRef.classList.toggle('program--active');
@@ -443,11 +442,11 @@ if (programRef) {
       document.querySelector('.turnover__title').classList.add('container');
       let turnoverItems = document.querySelectorAll('.turnover__item ');
 
-      [].forEach.call(turnoverItems, function(item) { 
+      [].forEach.call(turnoverItems, function (item) {
         item.style.paddingLeft = "16px";
         item.style.paddingRight = "16px";
       });
-      
+
     }
 
   });
@@ -464,7 +463,7 @@ let programDoc = document.querySelector('.program--doc');
 let programSec = document.querySelector('.program--sec');
 
 if (settingWrapper) {
-  programPro.addEventListener('click', function(e) {
+  programPro.addEventListener('click', function (e) {
     if (!programPro.classList.contains('program--active')) {
       programPro.classList.add('program--active');
       programDoc.classList.remove('program--active');
@@ -475,7 +474,7 @@ if (settingWrapper) {
       settingsSecurity.classList.add('d-none');
     }
   });
-  programDoc.addEventListener('click', function(e) {
+  programDoc.addEventListener('click', function (e) {
     if (!programDoc.classList.contains('program--active')) {
       programDoc.classList.add('program--active');
       programPro.classList.remove('program--active');
@@ -487,7 +486,7 @@ if (settingWrapper) {
 
     }
   });
-  programSec.addEventListener('click', function(e) {
+  programSec.addEventListener('click', function (e) {
     if (!programSec.classList.contains('program--active')) {
       programSec.classList.add('program--active');
       programPro.classList.remove('program--active');
@@ -505,7 +504,7 @@ let twoFactorInput = document.querySelector('.security__label input');
 let twoFactorLabel = document.querySelector('.security__label label');
 
 if (twoFactorLabel) {
-  twoFactorInput.addEventListener('click', function(e) {
+  twoFactorInput.addEventListener('click', function (e) {
     if (twoFactorInput.checked) {
       twoFactorLabel.textContent = 'On';
       turnOnPopup.classList.remove('d-none');
@@ -521,8 +520,8 @@ let turnOnPopup = document.querySelector('.turn-on');
 let cancelBtns = document.querySelectorAll('.cancel-btn');
 
 
-[].forEach.call(cancelBtns, function(cancelBtn) { 
-  cancelBtn.addEventListener('click', function(e) {
+[].forEach.call(cancelBtns, function (cancelBtn) {
+  cancelBtn.addEventListener('click', function (e) {
     turnOffPopup.classList.add('d-none');
     turnOnPopup.classList.add('d-none');
   });
@@ -535,43 +534,43 @@ let profileName = document.querySelector('.content__item--name');
 let profilePassword = document.querySelector('.content__item--password');
 
 if (passwordChange) {
-  passwordChange.addEventListener('click', function(e) {
+  passwordChange.addEventListener('click', function (e) {
     profileName.insertAdjacentHTML('afterend',
-      '<div class="password-change__wrapper" style="box-shadow: 0px 9px 18px rgba(15, 28, 75, 0.43);">' +  
-           '<div class="content__item">'+
-            '<p class="content__name">Current password</p>'+
-            '<div class="content__value-wrapper">'+
-              '<input class="content__value input" type="password" placeholder="Enter current password" style="border: none; padding: 0; font: inherit;">'+
-              '<div class="content-save__wrapper">'+
-                '<button class="content__change password__cancel-btn text-btn" type="button">Cancel</button>'+
-               '<button class="content__change password__save-btn text-btn" type="button">Save</button>'+
-              '</div>'+
-            '</div>'+
-          '</div>'+
-          '<div class="content__item">'+
-            '<p class="content__name">New password</p>'+
-            '<div class="content__value-wrapper">'+
-              '<input class="content__value input" type="password" placeholder="Enter new password" style="border: none; padding: 0; font: inherit;">'+
-            '</div>'+
-          '</div>'+
-          '<div class="content__item">'+
-          '<p class="content__name">Confirm new password</p>'+
-          '<div class="content__value-wrapper">'+
-            '<input class="content__value input" type="password" placeholder="Confirm password" style="border: none; padding: 0; font: inherit;">'+
-          '</div>'+
-        '</div>'+
+      '<div class="password-change__wrapper" style="box-shadow: 0px 9px 18px rgba(15, 28, 75, 0.43);">' +
+      '<div class="content__item">' +
+      '<p class="content__name">Current password</p>' +
+      '<div class="content__value-wrapper">' +
+      '<input class="content__value input" type="password" placeholder="Enter current password" style="border: none; padding: 0; font: inherit;">' +
+      '<div class="content-save__wrapper">' +
+      '<button class="content__change password__cancel-btn text-btn" type="button">Cancel</button>' +
+      '<button class="content__change password__save-btn text-btn" type="button">Save</button>' +
+      '</div>' +
+      '</div>' +
+      '</div>' +
+      '<div class="content__item">' +
+      '<p class="content__name">New password</p>' +
+      '<div class="content__value-wrapper">' +
+      '<input class="content__value input" type="password" placeholder="Enter new password" style="border: none; padding: 0; font: inherit;">' +
+      '</div>' +
+      '</div>' +
+      '<div class="content__item">' +
+      '<p class="content__name">Confirm new password</p>' +
+      '<div class="content__value-wrapper">' +
+      '<input class="content__value input" type="password" placeholder="Confirm password" style="border: none; padding: 0; font: inherit;">' +
+      '</div>' +
+      '</div>' +
       '</div>'
-);
+    );
     profilePassword.classList.add('d-none');
     let passwordCancelBtn = document.querySelector('.password__cancel-btn');
     let passwordSaveBtn = document.querySelector('.password__save-btn');
 
-    passwordCancelBtn.addEventListener('click', function(e) {
+    passwordCancelBtn.addEventListener('click', function (e) {
       document.querySelector('.password-change__wrapper').classList.add('d-none');
       profilePassword.classList.remove('d-none');
     });
 
-    passwordSaveBtn.addEventListener('click', function(e) {
+    passwordSaveBtn.addEventListener('click', function (e) {
       document.querySelector('.password-change__wrapper').classList.add('d-none');
       profilePassword.classList.remove('d-none');
     });
@@ -584,31 +583,31 @@ let changePasswordMob = document.querySelector('.content__change--password');
 
 if (changePasswordMob) {
 
-  changePasswordMob.addEventListener('click', function(e) {
+  changePasswordMob.addEventListener('click', function (e) {
     document.body.insertAdjacentHTML('afterbegin',
       '<div class="change-password-mob" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #fff; z-index: 5000; padding-top: 8px; padding-left: 24px; padding-right: 24px; display: flex;justify-content: flex-start; flex-direction: column">' +
-    '<div class="change__header" style="display: flex; align-items: center;width: 290px; margin: 0 auto; ">'+
-      '<button class="change-password-back" type="button" style=";width:24px; height: 24px; background: transparent url(../img/select-arrow.svg) center center no-repeat; transform: rotate(90deg); border: none"></button>'+
-      '<h2 class="setting__title" style="margin-bottom: 0;margin-left: 35px">Change password</h2>'+
-    '</div>'+
-    '<div class="change__content" style="margin: 0 auto;margin-top: 16px;    width: 272px;">'+
+      '<div class="change__header" style="display: flex; align-items: center;width: 290px; margin: 0 auto; ">' +
+      '<button class="change-password-back" type="button" style=";width:24px; height: 24px; background: transparent url(../img/select-arrow.svg) center center no-repeat; transform: rotate(90deg); border: none"></button>' +
+      '<h2 class="setting__title" style="margin-bottom: 0;margin-left: 35px">Change password</h2>' +
+      '</div>' +
+      '<div class="change__content" style="margin: 0 auto;margin-top: 16px;    width: 272px;">' +
 
-      '<label for="current-password" style="font: inherit; display: block;color: #959ca5; font-weight: 600;margin-bottom: 4px;">Current password</label>'+
-      '<div class="input__wrapper" style="margin-bottom: 36px;border: 1px solid #E2E8ED;box-sizing: border-box; border-radius: 8px;display: flex;justify-content: space-between;align-items: center;">'+
-       '<input id="current-password" type="password" class="input" style="border: none;font: inherit;padding: 8px 16px; width: 100%;" placeholder="Enter current password">'+
-        '<button class="show-password show-password--current" type="button" style="border: none; padding: 0;margin-right: 16px; width: 16px; height: 16px; background: transparent url(../img/show-password.svg) center center no-repeat;"></button>'+
-      '</div>'+
+      '<label for="current-password" style="font: inherit; display: block;color: #959ca5; font-weight: 600;margin-bottom: 4px;">Current password</label>' +
+      '<div class="input__wrapper" style="margin-bottom: 36px;border: 1px solid #E2E8ED;box-sizing: border-box; border-radius: 8px;display: flex;justify-content: space-between;align-items: center;">' +
+      '<input id="current-password" type="password" class="input" style="border: none;font: inherit;padding: 8px 16px; width: 100%;" placeholder="Enter current password">' +
+      '<button class="show-password show-password--current" type="button" style="border: none; padding: 0;margin-right: 16px; width: 16px; height: 16px; background: transparent url(../img/show-password.svg) center center no-repeat;"></button>' +
+      '</div>' +
 
-      '<label for="new-password" style="font: inherit; display: block;color: #959ca5; font-weight: 600;margin-bottom: 4px;">New password</label>'+
-      '<div class="input__wrapper" style="border: 1px solid #E2E8ED;box-sizing: border-box; border-radius: 8px;display: flex;justify-content: space-between;align-items: center;">'+
-        '<input id="new-password" type="password" class="input" style="border: none;font: inherit;padding: 8px 16px; width: 100%;" placeholder="Create password">'+
-        '<button class="show-password show-password--new" type="button" style="border: none; padding: 0;margin-right: 16px; width: 16px; height: 16px; background: transparent url(../img/show-password.svg) center center no-repeat;"></button>'+
-      '</div>'+
+      '<label for="new-password" style="font: inherit; display: block;color: #959ca5; font-weight: 600;margin-bottom: 4px;">New password</label>' +
+      '<div class="input__wrapper" style="border: 1px solid #E2E8ED;box-sizing: border-box; border-radius: 8px;display: flex;justify-content: space-between;align-items: center;">' +
+      '<input id="new-password" type="password" class="input" style="border: none;font: inherit;padding: 8px 16px; width: 100%;" placeholder="Create password">' +
+      '<button class="show-password show-password--new" type="button" style="border: none; padding: 0;margin-right: 16px; width: 16px; height: 16px; background: transparent url(../img/show-password.svg) center center no-repeat;"></button>' +
+      '</div>' +
 
-      '<button class="primary-btn" type="button" style="width: 100%;margin-top: 50px;">Change password</button>'+
+      '<button class="primary-btn" type="button" style="width: 100%;margin-top: 50px;">Change password</button>' +
 
-    '</div>'+
-  '</div>');
+      '</div>' +
+      '</div>');
 
     let changePasswordBack = document.querySelector('.change-password-back');
     let showPasswordCurrent = document.querySelector('.show-password--current');
@@ -617,10 +616,10 @@ if (changePasswordMob) {
     let showPasswordNew = document.querySelector('.show-password--new');
     let newPassword = document.querySelector('#new-password');
 
-    changePasswordBack.addEventListener('click', function(e) {
+    changePasswordBack.addEventListener('click', function (e) {
       document.querySelector('.change-password-mob').remove();
     });
-    showPasswordCurrent.addEventListener('click', function(e) {
+    showPasswordCurrent.addEventListener('click', function (e) {
       if (currentPassword.type != 'text') {
         currentPassword.type = 'text';
       } else {
@@ -628,7 +627,7 @@ if (changePasswordMob) {
       }
     });
 
-    showPasswordNew.addEventListener('click', function(e) {
+    showPasswordNew.addEventListener('click', function (e) {
       if (newPassword.type != 'text') {
         newPassword.type = 'text';
       } else {
@@ -647,14 +646,14 @@ if (countryActive) {
 
   countryActive.addEventListener(
     'click',
-    function(e) {
+    function (e) {
       countryList.classList.toggle('d-none');
       countryActive.classList.toggle('select__focus');
     });
 
 
-  [].forEach.call(countryItems, function(countryItem) { 
-    countryItem.addEventListener('click', function(e) {
+  [].forEach.call(countryItems, function (countryItem) {
+    countryItem.addEventListener('click', function (e) {
       countryList.classList.toggle('d-none');
       document.querySelector('.select--country .select__acitive-text').textContent = countryItem.textContent;
       document.querySelector('.select--country .select__acitive-text').style.color = "#495055";
@@ -678,13 +677,13 @@ let currenciesItems = document.querySelectorAll('.dropdown-select');
 let currenciesLists = document.querySelectorAll('.currency-list');
 
 
-[].forEach.call(currenciesItems, function(currenciesItem, i) { 
-  currenciesItem.addEventListener('click', function(e) {
-    [].forEach.call(currenciesLists, function(currenciesList, j) {
+[].forEach.call(currenciesItems, function (currenciesItem, i) {
+  currenciesItem.addEventListener('click', function (e) {
+    [].forEach.call(currenciesLists, function (currenciesList, j) {
       if (i == j) {
         currenciesList.classList.toggle('d-none');
       }
-     });
+    });
   });
 });
 
@@ -696,16 +695,16 @@ let paginationList = document.querySelector('.pagination-list');
 let paginationListItems = document.querySelectorAll('.pagination-list__item');
 
 if (paginationBtn) {
-  paginationBtn.addEventListener('click', function(e) {
+  paginationBtn.addEventListener('click', function (e) {
     paginationList.classList.toggle('d-none');
   });
 
-  [].forEach.call(paginationListItems, function(paginationListItem, j) {
-    paginationListItem.addEventListener('click', function(e) {
+  [].forEach.call(paginationListItems, function (paginationListItem, j) {
+    paginationListItem.addEventListener('click', function (e) {
       paginationList.classList.toggle('d-none');
       paginationBtn.textContent = paginationListItem.textContent;
     })
-   });
+  });
 }
 
 /* transfer slider index */
@@ -732,7 +731,7 @@ if (indexSlider) {
     }
   }
   indexMobile();
-  window.addEventListener('resize', function(e) {
+  window.addEventListener('resize', function (e) {
     indexMobile();
     if (document.body.clientWidth >= 1068) {
       indexSlider.classList.remove('d-none');
@@ -745,6 +744,46 @@ if (indexSlider) {
       document.querySelector('.cryptocurrency-exchange').style.width = null;
       document.querySelector('.cryptocurrency-exchange').style.maxWidth = null;
     }
+  });
+
+}
+
+/* card details */
+let selectCardMonth = document.querySelector('.card__select--month');
+let selectItemMonth = document.querySelector('.card__select-item--month');
+let cardListMonth = document.querySelector('.card-list--month');
+let cardListItemsMonth = document.querySelectorAll('.card-list__item--month');
+
+let selectCardYear = document.querySelector('.card__select--year');
+let selectItemYear = document.querySelector('.card__select-item--year');
+let cardListYear = document.querySelector('.card-list--year');
+let cardListItemsYear = document.querySelectorAll('.card-list__item--year');
+
+if (selectCardMonth) {
+  selectCardMonth.addEventListener('click', function(e) {
+    cardListMonth.classList.toggle('d-none');
+    if (!cardListYear.classList.contains('d-none')) {
+      cardListYear.classList.toggle('d-none');
+    }
+  });
+  selectCardYear.addEventListener('click', function(e) {
+    cardListYear.classList.toggle('d-none');
+    if (!cardListMonth.classList.contains('d-none')) {
+      cardListMonth.classList.toggle('d-none');
+    }
+  });
+
+
+  [].forEach.call(cardListItemsMonth, function (cardListItemMonth) {
+    cardListItemMonth.addEventListener('click', function(e) {
+      selectItemMonth.textContent = cardListItemMonth.textContent;
+    })
+  });
+
+  [].forEach.call(cardListItemsYear, function (cardListItemYear) {
+    cardListItemYear.addEventListener('click', function(e) {
+      selectItemYear.textContent = cardListItemYear.textContent;
+    })
   });
 
 }

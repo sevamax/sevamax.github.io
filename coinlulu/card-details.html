@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Coinolulu - Sign-in</title>
+  <title>Coinolulu - Card details</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
@@ -34,8 +34,24 @@
             placeholder="Enter your card number...">
           <label class="card__year">Expiration date</label>
           <div class="card-date__wrapper">
-            <input id="card-date-M" class="card-select text-input input" type="text" placeholder="MM">
-            <input id="card-date-Y" class="card-select text-input input" type="text" placeholder="YY">
+            <div class="card__select card__select--month">
+              <div class="card__select-item card__select-item--month">MM</div>
+              <div class="card-list card-list--month d-none">
+                <div class="card-list__item card-list__item--month" data-month="05">05</div>
+                <div class="card-list__item card-list__item--month" data-month="06">06</div>
+                <div class="card-list__item card-list__item--month" data-month="07">07</div>
+              </div>
+            </div>
+            <div class="card__select card__select--year ">
+              <div class="card__select-item card__select-item--year">YY</div>
+              <div class="card-list card-list--year d-none">
+                <div class="card-list__item card-list__item--year" data-year="2021">21</div>
+                <div class="card-list__item card-list__item--year" data-year="2022">22</div>
+                <div class="card-list__item card-list__item--year" data-year="2023">23</div>
+              </div>
+            </div>
+            <!-- <input id="card-date-M" class="card-select text-input input" type="text" placeholder="MM"> -->
+            <!-- <input id="card-date-Y" class="card-select text-input input" type="text" placeholder="YY"> -->
           </div>
 
         </div>
