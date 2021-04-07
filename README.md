@@ -1,39 +1,41 @@
-# Sivachenko Max
-
-[Astin Design](https://design.astin.co)
-
-[Device](https://sevamax.github.io/device/) - Device 
-
-[AstinDesign](https://sevamax.github.io/AstinDesign/) - AstinDesign
-
-[Barbershop](https://sevamax.github.io/barbershop/) - Barbershop
-
-
-[Sedona](https://sevamax.github.io/sedona/) - Sedona
+<!--# Sivachenko Max-->
 
 [Coinlulu](https://sevamax.github.io/coinlulu/) - Coinlulu
 
 
-Another projects 
+<!--[Astin Design](https://design.astin.co) -->
 
-[Accordeon](https://sevamax.github.io/accordeon/) - accordeon example
+<!--[Device](https://sevamax.github.io/device/) - Device
 
-[Forms-group](https://sevamax.github.io/forms-group/) - some sort of stylish form items
+<!--[AstinDesign](https://sevamax.github.io/AstinDesign/) - AstinDesign
 
-[Fullpage](https://sevamax.github.io/Fullpage/) - fullpage page without adaptive
+<!--[Barbershop](https://sevamax.github.io/barbershop/) - Barbershop
 
-[Modal](https://sevamax.github.io/modal/) - modal window example
 
-[Progress](https://sevamax.github.io/progress/) - progress bar
+<!--[Sedona](https://sevamax.github.io/sedona/) - Sedona
 
-[Slider](https://sevamax.github.io/slider/) - native slider
 
-[CSS3D](https://sevamax.github.io/css3d/) - 3D cube
 
-[Spinners](https://sevamax.github.io/spinners/) - groupe of spinners
+<!--Another projects 
 
-[Tabs](https://sevamax.github.io/tab/) - tabs example
+<!--[Accordeon](https://sevamax.github.io/accordeon/) - accordeon example
 
-[Parallax-Mountains](https://sevamax.github.io/Parallax) - interesting parallax-page
+<!--[Forms-group](https://sevamax.github.io/forms-group/) - some sort of stylish form items
+
+<!--[Fullpage](https://sevamax.github.io/Fullpage/) - fullpage page without adaptive
+
+<!--[Modal](https://sevamax.github.io/modal/) - modal window example
+
+<!--[Progress](https://sevamax.github.io/progress/) - progress bar
+
+<!--[Slider](https://sevamax.github.io/slider/) - native slider
+
+<!--[CSS3D](https://sevamax.github.io/css3d/) - 3D cube
+
+<!--[Spinners](https://sevamax.github.io/spinners/) - groupe of spinners
+
+<!--[Tabs](https://sevamax.github.io/tab/) - tabs example
+
+<!--[Parallax-Mountains](https://sevamax.github.io/Parallax) - interesting parallax-page
 
 
