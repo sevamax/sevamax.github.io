@@ -453,6 +453,34 @@ if (programRef) {
 }
 
 
+
+
+  let copyInput = document.querySelector('#member-link');
+  let copyBtn = document.querySelector('.invite-members__btn');
+  
+  if (copyInput) {
+  copyBtn.addEventListener('click', function (e) {
+    copyInput.select();
+    document.execCommand("copy");
+    copyInput.blur();
+  });
+
+  if (document.body.clientWidth <= 1068) {
+    copyInput.addEventListener('click', function (e) {
+      copyInput.select();
+      document.execCommand("copy");
+      copyInput.blur();
+    });
+  }
+
+  window.addEventListener('resize', function (e) {
+    if (document.body.clientWidth >= 1068) {
+
+    }
+  });
+}
+/* settings */
+
 let settingWrapper = document.querySelector('.settings__wrapper.program__wrapper');
 let settingsProfile = document.querySelector('.settings__profile');
 let settingsDocument = document.querySelector('.settings__documents');
@@ -760,13 +788,13 @@ let cardListYear = document.querySelector('.card-list--year');
 let cardListItemsYear = document.querySelectorAll('.card-list__item--year');
 
 if (selectCardMonth) {
-  selectCardMonth.addEventListener('click', function(e) {
+  selectCardMonth.addEventListener('click', function (e) {
     cardListMonth.classList.toggle('d-none');
     if (!cardListYear.classList.contains('d-none')) {
       cardListYear.classList.toggle('d-none');
     }
   });
-  selectCardYear.addEventListener('click', function(e) {
+  selectCardYear.addEventListener('click', function (e) {
     cardListYear.classList.toggle('d-none');
     if (!cardListMonth.classList.contains('d-none')) {
       cardListMonth.classList.toggle('d-none');
@@ -775,13 +803,13 @@ if (selectCardMonth) {
 
 
   [].forEach.call(cardListItemsMonth, function (cardListItemMonth) {
-    cardListItemMonth.addEventListener('click', function(e) {
+    cardListItemMonth.addEventListener('click', function (e) {
       selectItemMonth.textContent = cardListItemMonth.textContent;
     })
   });
 
   [].forEach.call(cardListItemsYear, function (cardListItemYear) {
-    cardListItemYear.addEventListener('click', function(e) {
+    cardListItemYear.addEventListener('click', function (e) {
       selectItemYear.textContent = cardListItemYear.textContent;
     })
   });
