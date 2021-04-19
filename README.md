@@ -16,7 +16,7 @@
 
 
 
-<!--Another projects 
+Another projects
 
 [Accordeon](https://sevamax.github.io/accordeon/) - accordeon example
 
