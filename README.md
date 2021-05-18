@@ -1,6 +1,6 @@
 <!--# Sivachenko Max-->
 
-<!--[Coinlulu](https://sevamax.github.io/coinlulu/) - Coinlulu-->
+[Coinlulu](https://sevamax.github.io/coinlulu/) - Coinlulu
 
 
 [Astin Design](https://design.astin.co)
