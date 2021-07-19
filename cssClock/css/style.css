@@ -1,0 +1,126 @@
+:root {
+    --second: 1s;
+    --minute: calc(var(--second) * 60);
+    --hour: calc(var(--minute) * 60);
+    --blue: #72bddc;
+    --grey: #ececee;
+    --yellow: #efca34;
+    --dark-blue: #2d3e52;
+}
+
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 3em;
+    border-radius: 50%;
+    background-color: var(--grey);
+    transform: rotate(180deg);
+}
+.clock::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background: #faa;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.second {
+    --width: 5px;
+    --height: 120px;
+    --color: var(--yellow);
+}
+
+.minute {
+    --width: 10px;
+    --height: 90px;
+    --color: var(--blue);
+}
+
+.hour {
+    --width: 10px;
+    --height: 50px;
+    --color: var(--dark-blue);
+}
+
+.hand {
+    position: absolute;
+    left: calc(50% - var(--width) / 2);
+    top: 50%;
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--color);
+    border-radius: calc(var(--width) / 2);
+    transform-origin: center 0;
+}
+
+.line {
+    font: 26px Monaco, MonoSpace;
+    height: 145px;
+    position: absolute;
+    width: 20px;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+}
+
+.line--1 {
+    transform: translateX(700%) rotate(210deg);
+}
+.line--2 {
+    transform:  translateX(700%) rotate(240deg);
+}
+.line--3 {
+    transform: translateX(700%)  rotate(270deg);
+}
+.line--4 {
+    transform:  translateX(700%) rotate(300deg);
+}
+.line--5 {
+    transform:  translateX(700%) rotate(330deg);
+}
+.line--6 {
+    transform:  translateX(700%) rotate(360deg);
+}
+.line--7 {
+    transform:  translateX(700%) rotate(30deg);
+}
+.line--8 {
+    transform:  translateX(700%) rotate(60deg);
+}
+.line--9 {
+    transform:  translateX(700%) rotate(90deg);
+}
+.line--10 {
+    transform:  translateX(700%) rotate(120deg);
+}
+.line--11 {
+    transform:  translateX(700%) rotate(150deg);
+}
+.line--12 {
+    transform:  translateX(700%) rotate(180deg);
+}
+.line--13 {
+    transform: translateX(700%)  rotate(210deg);
+}
+
+/* animation */
+@keyframes rotate {
+    from { transform: rotate(0); }
+    to   { transform: rotate(1turn); }
+}
+
+.second.hand {
+    animation: rotate steps(60) var(--minute) infinite;
+}
+.minute.hand {
+    animation: rotate linear var(--hour) infinite;
+}
+.hour.hand {
+    animation: rotate linear calc(var(--hour) * 12) infinite;
+}
