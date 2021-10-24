@@ -491,6 +491,64 @@ p {
   max-width: 300px;
 }
 
+/* modal buy */
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #022a4d66;
+  overflow: hidden;
+}
+
+.modal__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 80%;
+  padding: 25px 0;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.modal__container {
+  padding: 0 42px;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 33px;
+  top: 16px;
+  width: 37px;
+  height: 37px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/img/close.png);
+  cursor: pointer;
+}
+
+
+.fieldset {
+  padding: 0;
+  border: none;
+}
+
+.fieldset__title {
+  margin-bottom: 15px;
+}
+
 @media (max-width: 768px) {
   .full-review__footer {
     flex-direction: column;

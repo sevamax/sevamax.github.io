@@ -34,7 +34,40 @@ if (languageWrapper) {
   document.addEventListener('click', languageDrop)
 }
 
+// modal
+let modal = document.querySelector('.modal')
+let modalOpen = document.querySelectorAll('.modal-btn');
+let modalClose = document.querySelector('.modal__close');
 
 
+modalOpen.forEach(btnOpen => {
+  btnOpen.addEventListener('click', e => {
+    modal.classList.remove('visually-hidden');
+    document.body.style.overflow = 'hidden';
 
-// full review actions
+    modal.style.top = `${window.pageYOffset}px`;
+  })
+})
+
+
+if (modal) {
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.modal__content') &&
+        !modal.classList.contains('visually-hidden') &&
+        !e.target.closest('.modal-btn') || 
+        e.target.closest('.modal__close')) {
+
+      modal.classList.add('visually-hidden');
+      document.body.style.overflow = null;
+    }
+  })
+
+  document.addEventListener('keyup', e => {
+    if (e.code == 'Escape' && !modal.classList.contains('visually-hidden')) {
+      console.log(e.key)
+      modal.classList.add('visually-hidden');
+      document.body.style.overflow = null;
+    }
+  })
+
+}
