@@ -3,7 +3,7 @@
 [Coinlulu](https://sevamax.github.io/coinlulu/) - Coinlulu
 
 
-[Dream Music](https://sevamax.github.io/finished%20projects/dreammusic)
+[Dream Music](https://sevamax.github.io/finished%20projects/dreammusic) - Dream Music
 
 [Astin Design](https://design.astin.co)
 
