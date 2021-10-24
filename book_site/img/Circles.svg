@@ -1,0 +1,7 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="240" cy="240" r="145" stroke="#CCCCCC" stroke-width="10"/>
+<circle cx="240" cy="240" r="175" stroke="#CCCCCC" stroke-width="10"/>
+<circle cx="240" cy="240" r="235" stroke="#CCCCCC" stroke-width="10"/>
+<path d="M355 240C355 303.513 303.513 355 240 355C176.487 355 125 303.513 125 240C125 176.487 176.487 125 240 125C303.513 125 355 176.487 355 240Z" stroke="#CCCCCC" stroke-width="10"/>
+<circle cx="240" cy="240" r="205" stroke="#CCCCCC" stroke-width="10"/>
+</svg>
