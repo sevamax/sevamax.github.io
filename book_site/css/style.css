@@ -215,6 +215,7 @@ p {
   margin-top: 52px;
 }
 
+
 .promo__author {
   margin: 0;
   margin-top: 31px;
@@ -485,6 +486,7 @@ p {
 
 .full-review__footer img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 .full-review__author {
@@ -549,7 +551,82 @@ p {
   margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+ .promo__title {
+   font-size: 50px;
+ }
+ .promo__title--red {
+   font-size: 58px;
+ }
+ .promo__item {
+   padding-right: 7px;
+ }
+}
+
+@media (max-width: 1100px) {
+  .review::before {
+    content: none;
+  }
+
+  .review--1 .review__photo {
+    margin-right: 0;
+  }
+ }
+
+@media (max-width: 800px) {
+  .nav {
+    justify-content: space-evenly;
+  }
+
+  .promo__item {
+    max-width: initial;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .promo__photo--mob {
+    margin-bottom: 40px;
+  }
+
+  .review {
+    padding-top: 0;
+  }
+
+  .review,
+  .review--2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review::after,
+  .review::before {
+    content: none;
+  }
+
+  .reviews__wrapper .review__photo {
+    margin: 0;
+  }
+
+  .buy__wrapper {
+    flex-direction: column;
+  }
+
+  .buy__btn-wrapper {
+    margin-top: 35px;
+  }
+
+  .about-author__wrapper {
+    flex-direction: column;
+  }
+
+  .about-author__photo {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .snatches {
+    margin-top: 85px;
+  }
+
   .full-review__footer {
     flex-direction: column;
   }
@@ -558,3 +635,19 @@ p {
     padding: 0 15px;
   }
 }
+
+
+@media (max-width: 500px) {
+  .about-book__wrapper {
+    flex-direction: column;
+  }
+
+  .about-book__item {
+    padding: 0;
+    max-width: initial;
+    background-color: transparent;
+  }
+  .about-book__item + .about-book__item {
+    margin-left: 0;
+  }
+ }

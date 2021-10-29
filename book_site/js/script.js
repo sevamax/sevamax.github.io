@@ -71,3 +71,18 @@ if (modal) {
   })
 
 }
+
+
+/* adaptive */
+let promoTitle = document.querySelector('.promo__title');
+let promoAuthor = document.querySelector('.promo__author');
+let promoPhotoMob = document.querySelector('.promo__photo--mob');
+let promoPhotoDesc = document.querySelector('.promo__item + .promo__photo');
+if (window.innerWidth <= 800) {
+  console.log('hello')
+  promoTitle.classList.add('visually-hidden');
+  promoAuthor.classList.add('visually-hidden');
+  promoPhotoMob.classList.remove('visually-hidden');
+  console.log(promoPhotoMob, promoPhotoDesc)
+  promoPhotoDesc.classList.add('visually-hidden');
+}
