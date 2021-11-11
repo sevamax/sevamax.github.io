@@ -1,5 +1,7 @@
 'use strict'
 
+let modalHeight = document.querySelector('.modal').clientHeight ;
+let headerHeight = document.querySelector('.header').clientHeight;
 let languageWrapper = document.querySelector('.language');
 let languageActive = document.querySelector('.language__item--active');
 let languageArrow = document.querySelector('.language__arrow');
@@ -36,6 +38,7 @@ if (languageWrapper) {
 
 // modal
 let modal = document.querySelector('.modal')
+let modalContent = document.querySelector('.modal__content');
 let modalOpen = document.querySelectorAll('.modal-btn');
 let modalClose = document.querySelector('.modal__close');
 
@@ -45,7 +48,13 @@ modalOpen.forEach(btnOpen => {
     modal.classList.remove('visually-hidden');
     document.body.style.overflow = 'hidden';
 
-    modal.style.top = `${window.pageYOffset}px`;
+    if (window.innerWidth <= 500) {
+      modal.style.height = `${window.innerHeight}px`;
+      modal.style.transform = `translateY(${-(headerHeight + 35) + window.pageYOffset}px)`
+   } else {
+      modal.style.top = `${window.pageYOffset}px`;
+    }
+
   })
 })
 
@@ -64,7 +73,6 @@ if (modal) {
 
   document.addEventListener('keyup', e => {
     if (e.code == 'Escape' && !modal.classList.contains('visually-hidden')) {
-      console.log(e.key)
       modal.classList.add('visually-hidden');
       document.body.style.overflow = null;
     }
@@ -78,7 +86,9 @@ let promoTitle = document.querySelector('.promo__title');
 let promoAuthor = document.querySelector('.promo__author');
 let promoPhotoMob = document.querySelector('.promo__photo--mob');
 let promoPhotoDesc = document.querySelector('.promo__item + .promo__photo');
-if (window.innerWidth <= 800) {
+
+
+if (window.innerWidth <= 800 && promoTitle) {
   console.log('hello')
   promoTitle.classList.add('visually-hidden');
   promoAuthor.classList.add('visually-hidden');

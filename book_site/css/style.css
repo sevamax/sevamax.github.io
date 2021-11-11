@@ -549,6 +549,7 @@ p {
 
 .fieldset__title {
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
@@ -584,6 +585,7 @@ p {
     align-items: center;
   }
   .promo__photo--mob {
+    margin-top: 30px;
     margin-bottom: 40px;
   }
 
@@ -618,6 +620,10 @@ p {
     flex-direction: column;
   }
 
+  .about-author__desc {
+    padding-right: 0;
+  }
+
   .about-author__photo {
     text-align: center;
     margin-top: 20px;
@@ -649,5 +655,9 @@ p {
   }
   .about-book__item + .about-book__item {
     margin-left: 0;
+  }
+
+  .main {
+    position: relative;
   }
  }
